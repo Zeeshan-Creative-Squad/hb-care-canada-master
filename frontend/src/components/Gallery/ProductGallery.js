@@ -5,52 +5,52 @@ import Modal from '../Model/Modal';
 
 
 const galleryImages = [
-  "/gallery/scissors/3-min.jpg",
-  "/gallery/scissors/4-min.jpg",
-  "/gallery/scissors/5-min.jpg",
-  "/gallery/scissors/6-min.jpg",
-  "/gallery/scissors/7-min.jpg",
-  "/gallery/scissors/8-min.jpg",
-  "/gallery/scissors/9-min.jpg",
-  "/gallery/scissors/10-min.jpg",
-  "/gallery/scissors/11-min.jpg",
-  "/gallery/scissors/12-min.jpg",
-  "/gallery/scissors/13-min.jpg",
-  "/gallery/scissors/14-min.jpg",
-  "/gallery/scissors/15-min.jpg",
-  "/gallery/scissors/16-min.jpg",
-  "/gallery/scissors/17-min.jpg",
-  "/gallery/scissors/18-min.jpg",
-  "/gallery/scissors/19-min.jpg",
-  "/gallery/scissors/20-min.jpg",
-  "/gallery/scissors/21-min.jpg",
-  "/gallery/scissors/22-min.jpg",
+  "/images/gallery/Scissors/3-min.jpg",
+  "/images/gallery/Scissors/4-min.jpg",
+  "/images/gallery/Scissors/5-min.jpg",
+  "/images/gallery/Scissors/6-min.jpg",
+  "/images/gallery/Scissors/7-min.jpg",
+  "/images/gallery/Scissors/8-min.jpg",
+  "/images/gallery/Scissors/9-min.jpg",
+  "/images/gallery/Scissors/10-min.jpg",
+  "/images/gallery/Scissors/11-min.jpg",
+  "/images/gallery/Scissors/12-min.jpg",
+  "/images/gallery/Scissors/13-min.jpg",
+  "/images/gallery/Scissors/14-min.jpg",
+  "/images/gallery/Scissors/15-min.jpg",
+  "/images/gallery/Scissors/16-min.jpg",
+  "/images/gallery/Scissors/17-min.jpg",
+  "/images/gallery/Scissors/18-min.jpg",
+  "/images/gallery/Scissors/19-min.jpg",
+  "/images/gallery/Scissors/20-min.jpg",
+  "/images/gallery/Scissors/21-min.jpg",
+  "/images/gallery/Scissors/22-min.jpg",
   
-  "/gallery/scissors/23-min.jpg",
-  "/gallery/scissors/24-min.jpg",
-  "/gallery/scissors/25-min.jpg",
-  "/gallery/scissors/26-min.jpg",
-  "/gallery/scissors/27-min.jpg",
-  "/gallery/scissors/28-min.jpg",
-  "/gallery/scissors/29-min.jpg",
-  "/gallery/scissors/30-min.jpg",
-  "/gallery/scissors/31-min.jpg",
-  "/gallery/scissors/32-min.jpg",
-  "/gallery/scissors/33-min.jpg",
-  "/gallery/scissors/34-min.jpg",
-  "/gallery/scissors/35-min.jpg",
-  "/gallery/scissors/36-min.jpg",
-  "/gallery/scissors/37-min.jpg",
-  "/gallery/scissors/38-min.jpg",
-  "/gallery/scissors/39-min.jpg",
-  "/gallery/scissors/40-min.jpg",
-  "/gallery/scissors/43-min.jpg",
-  "/gallery/scissors/44-min.jpg",
-  "/gallery/scissors/47-min.jpg",
-  "/gallery/scissors/48-min.jpg",
-  "/gallery/scissors/49-min.jpg",
-  "/gallery/scissors/55-min.jpg",
-  "/gallery/scissors/56-min.jpg",
+  "/images/gallery/Scissors/23-min.jpg",
+  "/images/gallery/Scissors/24-min.jpg",
+  "/images/gallery/Scissors/25-min.jpg",
+  "/images/gallery/Scissors/26-min.jpg",
+  "/images/gallery/Scissors/27-min.jpg",
+  "/images/gallery/Scissors/28-min.jpg",
+  "/images/gallery/Scissors/29-min.jpg",
+  "/images/gallery/Scissors/30-min.jpg",
+  "/images/gallery/Scissors/31-min.jpg",
+  "/images/gallery/Scissors/32-min.jpg",
+  "/images/gallery/Scissors/33-min.jpg",
+  "/images/gallery/Scissors/34-min.jpg",
+  "/images/gallery/Scissors/35-min.jpg",
+  "/images/gallery/Scissors/36-min.jpg",
+  "/images/gallery/Scissors/37-min.jpg",
+  "/images/gallery/Scissors/38-min.jpg",
+  "/images/gallery/Scissors/39-min.jpg",
+  "/images/gallery/Scissors/40-min.jpg",
+  "/images/gallery/Scissors/43-min.jpg",
+  "/images/gallery/Scissors/44-min.jpg",
+  "/images/gallery/Scissors/47-min.jpg",
+  "/images/gallery/Scissors/48-min.jpg",
+  "/images/gallery/Scissors/49-min.jpg",
+  "/images/gallery/Scissors/55-min.jpg",
+  "/images/gallery/Scissors/56-min.jpg",
   
 ]
 
@@ -88,7 +88,8 @@ const ProductGallery = () => {
   }
 
   return (
-    <div className="container gallery-container">
+    <div className='gallery-container'>
+    <div className="container">
 
   
     <div className="gallery-section">
@@ -180,6 +181,7 @@ const ProductGallery = () => {
     closeModal={closeModal}
     img={img}
     />
+  </div>
   </div>
   )
 }

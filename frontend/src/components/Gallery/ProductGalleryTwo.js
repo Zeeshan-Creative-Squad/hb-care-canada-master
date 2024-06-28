@@ -9,8 +9,8 @@ import FooterHero from '../../components/Footer/footerHero';
 
 const galleryImages = [
 
-  "/gallery/NailCareTools/45-min.jpg",
-  "/gallery/NailCareTools/46-min.jpg",
+  "/images/gallery/NailCareTools/45-min.jpg",
+  "/images/gallery/NailCareTools/46-min.jpg",
   
   
  
@@ -54,8 +54,10 @@ const ProductGalleryTwo = () => {
     <>
    <NavbarCS />
    <ProductHero />
-    
-    <div className="container gallery-container">
+
+
+    <div className='gallery-container'>
+    <div className="container">
 
   
     <div className="gallery-section">
@@ -149,6 +151,7 @@ const ProductGalleryTwo = () => {
     />
   </div>
   <FooterHero />
+  </div>
   </>
   )
 }
