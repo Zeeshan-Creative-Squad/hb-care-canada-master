@@ -64,13 +64,13 @@ const ProductGalleryTwo = () => {
       <div className="gallery">
       <div className='d-flex flex-column flex-lg-row '>
         <div className="gallery-item ">
-          <img src="/gallery/NailCareTools/41-min.jpg" alt="Img 2" className="gallery-image2" onClick={()=> {
+          <img src="/images/gallery/NailCareTools/41-min.jpg" alt="Img 2" className="gallery-image2" onClick={()=> {
                 setShow(true) ; SetImg("/gallery/NailCareTools/41-min.jpg")
               }} />
         </div>
         <div className="gallery-item">
           <img src="/gallery/NailCareTools/42-min.jpg" alt="Img 1" className="gallery-image1" onClick={()=> {
-                setShow(true) ; SetImg("/gallery/NailCareTools/42-min.jpg")
+                setShow(true) ; SetImg("/images/gallery/NailCareTools/42-min.jpg")
               }} />
         </div>
         </div>

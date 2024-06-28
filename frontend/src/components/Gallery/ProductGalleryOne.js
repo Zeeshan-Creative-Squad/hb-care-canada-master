@@ -63,13 +63,13 @@ const ProductGalleryOne = () => {
       <div className="gallery">
       <div className='d-flex flex-column flex-lg-row '>
         <div className="gallery-item ">
-          <img src="/gallery/FootScrubbers/50-min.jpg" alt="Img 2" className="gallery-image2" onClick={()=> {
-                setShow(true) ; SetImg("/gallery/FootScrubbers/50-min.jpg")
+          <img src="/images/gallery/FootScrubbers/50-min.jpg" alt="Img 2" className="gallery-image2" onClick={()=> {
+                setShow(true) ; SetImg("/images/gallery/FootScrubbers/50-min.jpg")
               }} />
         </div>
         <div className="gallery-item">
-          <img src="/gallery/FootScrubbers/51-min.jpg" alt="Img 1" className="gallery-image1" onClick={()=> {
-                setShow(true) ; SetImg("/gallery/FootScrubbers/51-min.jpg")
+          <img src="/images/gallery/FootScrubbers/51-min.jpg" alt="Img 1" className="gallery-image1" onClick={()=> {
+                setShow(true) ; SetImg("/images/gallery/FootScrubbers/51-min.jpg")
               }} />
         </div>
         </div>

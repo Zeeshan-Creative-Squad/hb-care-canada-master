@@ -101,7 +101,7 @@ const ProductGallery = () => {
               }} />
         </div>
         <div className="gallery-item">
-          <img src="/gallery/Scissors/2-min.png" alt="Image 1" className="gallery-image1" onClick={()=> {
+          <img src="/images/gallery/Scissors/2-min.png" alt="Image 1" className="gallery-image1" onClick={()=> {
                 setShow(true) ; SetImg("/images/2.png")
               }} />
         </div>
