@@ -2,11 +2,11 @@
   "name": "client-lms-software-backend",
   "version": "1.0.0",
   "description": "Learning Management System Software",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node backend/server",
-    "server": "nodemon backend/server ",
+    "start": "node backend/index",
+    "server": "nodemon backend/index ",
     "client": "npm start --prefix frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\" ",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix frontend && npm run build --prefix frontend"
@@ -15,12 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.4",
     "mongoose-sequence": "^6.0.1",
+    "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.4",
     "react-icons": "^5.2.1",
     "react-scripts": "^5.0.1"

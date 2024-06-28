@@ -2,7 +2,6 @@ import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import connectDataBase from "./config/database.js";
-import axios from "axios";
 import cors from "cors";
 import nodemailer from "nodemailer";
 import blogRoutes from "./routes/apiRouter.js";
