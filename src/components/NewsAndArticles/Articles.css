@@ -1,0 +1,198 @@
+.articles-container {
+  padding: 10vh 0;
+  position: relative; /* Ensure relative positioning for slider buttons */
+}
+
+.articles-container .readmore-btn {
+  text-decoration: none;
+  color: #8B8B8B;
+}
+
+.articles-container .custom-card-text {
+  color: #1F2F54;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Custom Card styles */
+.custom-card {
+  border: none;
+  box-shadow: 
+    0px -6px 40px -4px rgba(0, 0, 0, 0.1), /* Top shadow */
+    0px 6px 40px -4px rgba(0, 0, 0, 0.1);  /* Bottom shadow */
+  padding: 38px 30px;
+  border-radius: 20px;
+}
+
+.custom-card-body {
+  padding: 1.25rem;
+}
+
+.custom-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.custom-card-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 0.75rem;
+}
+
+.custom-card-link {
+  color: #8B8B8B;
+  text-decoration: none;
+}
+
+.custom-card-link:hover {
+  text-decoration: underline;
+}
+
+.custom-card-img {
+  border-radius: 0;
+}
+
+/* Slider buttons */
+.slider-buttons {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 45px; /* Adjust button width */
+  height: 45px; /* Adjust button height */
+  background-color: rgba(0, 0, 0, 0.178); /* Button background color */
+  color: white; /* Button text color */
+  font-size: 24px; /* Button font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure buttons are above other content */
+}
+
+.slider-buttons.left {
+  left: 120px; /* Adjust left position */
+}
+
+.slider-buttons.right {
+  right: 120px; /* Adjust right position */
+}
+
+
+
+@media (max-width: 575.98px) {
+  .articles-container {
+    text-align: center;
+  }
+
+  .h1_main {
+    font-size: 24px;
+  }
+
+  .primary-button {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .custom-card-body {
+    padding: 1rem;
+  }
+
+  .custom-card-title {
+    font-size: 1.25rem;
+  }
+
+  .custom-card-subtitle {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .articles-container {
+    text-align: center;
+  }
+
+  .h1_main {
+    font-size: 28px;
+  }
+
+  .primary-button {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .custom-card-body {
+    padding: 1.1rem;
+  }
+
+  .custom-card-title {
+    font-size: 1.4rem;
+  }
+
+  .custom-card-subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .articles-container {
+    text-align: center;
+  }
+
+  .h1_main {
+    font-size: 32px;
+  }
+
+  .primary-button {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .custom-card-body {
+    padding: 1.25rem;
+  }
+
+  .custom-card-title {
+    font-size: 1.5rem;
+  }
+
+  .custom-card-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .h1_main {
+    font-size: 36px;
+  }
+
+  .custom-card-body {
+    padding: 1.5rem;
+  }
+
+  .custom-card-title {
+    font-size: 1.75rem;
+  }
+
+  .custom-card-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h1_main {
+    font-size: 40px;
+  }
+
+  /* .custom-card-body {
+    padding: 1.75rem;
+  } */
+
+  .custom-card-title {
+    font-size: 2rem;
+  }
+
+  .custom-card-subtitle {
+    font-size: 1.25rem;
+  }
+}

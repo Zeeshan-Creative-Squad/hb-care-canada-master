@@ -1,0 +1,145 @@
+.important-div {
+    background-color: #3F1626;
+    padding: 10vh 5vw;
+  }
+  
+  .important-div .services-container {
+    background-color: #3F1626;
+    color: #FFFFFF;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  .important-div .para_main {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+  }
+  
+  .important-div .connect-button {
+    background-color: #C5B4A1;
+    color: #3F1626;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  .important-div .connect-button:hover {
+    background-color: #b3a491;
+  }
+  
+  .important-div .list-group {
+    max-width: 90%;
+    border-radius: 14px;
+  }
+  
+  .important-div .list-group-item {
+    background-color: #FFFFFF;
+    color: #2D2D2D;
+    border: 1px solid #D1D1D1;
+    padding: 28px;
+  }
+  
+  .important-div .list-group-item.active {
+    background-color: #D3C6B8;
+    color: #333;
+    border-color: #C5B4A1;
+  }
+  
+  @media (max-width: 1200px) {
+    .important-div .services-container {
+      padding: 30px;
+    }
+  
+    .important-div .head-h1 {
+      font-size: 1.8em;
+    }
+  
+    .important-div .para_main {
+      font-size: 0.95em;
+    }
+  
+    .important-div .list-group-item {
+      padding: 25px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .important-div .services-container {
+      padding: 25px;
+    }
+  
+    .important-div .head-h1 {
+      font-size: 1.7em;
+    }
+  
+    .important-div .para_main {
+      font-size: 0.9em;
+    }
+  
+    .important-div .list-group-item {
+      padding: 22px;
+    }
+    .important-div .list-group {
+        max-width: 100%;
+        
+      }
+  }
+  
+  @media (max-width: 768px) {
+    .important-div .services-container {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .important-div .head-h1 {
+      font-size: 2em;
+    }
+  
+    .important-div .para_main {
+      font-size: 0.9em;
+    }
+  
+    .important-div .list-group-item {
+      padding: 20px;
+    }
+  
+    .important-div .connect-button {
+      margin-bottom: 22px;
+    }
+  
+    .important-div .list-group-item.active {
+      text-align: center;
+    }
+  
+    .important-div .list-group-item {
+      text-align: center;
+    }
+  
+    .important-div .list-group {
+      margin-top: 20px;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .important-div .services-container {
+      padding: 10px;
+    }
+  
+    .important-div .head-h1 {
+      font-size: 2em;
+    }
+  
+    .important-div .para_main {
+      font-size: 0.9em;
+    }
+  
+    .important-div .list-group-item {
+      padding: 15px;
+    }
+    .important-div .list-group {
+        margin-top: 20px;
+        max-width: 100%;
+      }
+  }
+  

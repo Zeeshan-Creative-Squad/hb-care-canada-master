@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.808" height="63.809" viewBox="0 0 63.808 63.809">
+  <defs>
+    <filter id="Rectangle_1713" x="0" y="0" width="63.808" height="63.809" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2237" data-name="Group 2237" transform="translate(-313.35 -834.45)">
+    <g transform="matrix(1, 0, 0, 1, 313.35, 834.45)" filter="url(#Rectangle_1713)">
+      <rect id="Rectangle_1713-2" data-name="Rectangle 1713" width="45.808" height="45.809" rx="5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M10.283,7.248a5.273,5.273,0,1,0,5.273,5.273A5.265,5.265,0,0,0,10.283,7.248Zm0,8.7a3.428,3.428,0,1,1,3.428-3.428,3.435,3.435,0,0,1-3.428,3.428ZM17,7.033a1.23,1.23,0,1,1-1.23-1.23A1.227,1.227,0,0,1,17,7.033Zm3.493,1.248a6.087,6.087,0,0,0-1.661-4.31,6.127,6.127,0,0,0-4.31-1.661c-1.7-.1-6.788-.1-8.486,0a6.118,6.118,0,0,0-4.31,1.657A6.107,6.107,0,0,0,.067,8.276c-.1,1.7-.1,6.788,0,8.486a6.087,6.087,0,0,0,1.661,4.31,6.135,6.135,0,0,0,4.31,1.661c1.7.1,6.788.1,8.486,0a6.087,6.087,0,0,0,4.31-1.661,6.127,6.127,0,0,0,1.661-4.31c.1-1.7.1-6.783,0-8.482ZM18.3,18.585a3.471,3.471,0,0,1-1.955,1.955c-1.354.537-4.567.413-6.063.413s-4.713.119-6.063-.413a3.471,3.471,0,0,1-1.955-1.955c-.537-1.354-.413-4.567-.413-6.063s-.119-4.713.413-6.063A3.471,3.471,0,0,1,4.22,4.5c1.354-.537,4.567-.413,6.063-.413S15,3.971,16.346,4.5A3.471,3.471,0,0,1,18.3,6.459c.537,1.354.413,4.567.413,6.063S18.838,17.235,18.3,18.585Z" transform="translate(334.822 850.686)" fill="#3f1626"/>
+  </g>
+</svg>

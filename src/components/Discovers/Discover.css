@@ -1,0 +1,160 @@
+/* Background styling */
+.discover-background {
+  background-color: #3F1626;
+  padding: 50px 0; /* Add padding to create space around the container */
+}
+
+/* Main container styling */
+.discover-container {
+  background-color: #3F1626;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Card styling */
+.discover-container .card {
+  background-color: white;
+  border-radius: 22px;
+  margin-bottom: 20px; /* Add margin-bottom to create space between cards */
+}
+
+/* Card text styling */
+.discover-container .card-text {
+  color: #717C93;
+  line-height: 2;
+}
+
+/* Card title styling */
+.discover-container .card-title {
+  color: #2D2D2D;
+}
+
+/* Button link styling */
+.discover-container .btn-link {
+  color: #8B8B8B;
+  text-decoration: none;
+}
+
+.discover-container .btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Paragraph main styling */
+.discover-container .para_main {
+  color: #FFFFFF;
+}
+
+/* Card body padding */
+.discover-container .card-body {
+  padding: 9vh 5vh;
+}
+
+/* Media queries */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .discover-container .card-body {
+    padding: 6vh 3vh;
+  }
+
+  .discover-container .para_main {
+    font-size: 14px;
+  }
+
+  .discover-container .card-title {
+    font-size: 18px;
+  }
+
+  .discover-container .card-text {
+    font-size: 14px;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .discover-container .card-body {
+    padding: 7vh 4vh;
+  }
+
+  .discover-container .para_main {
+    font-size: 16px;
+  }
+
+  .discover-container .card-title {
+    font-size: 20px;
+  }
+
+  .discover-container .card-text {
+    font-size: 16px;
+  }
+  .discover-container .card {
+    background-color: white;
+   max-width: 100%;
+  }
+  
+}
+
+/* Medium devices (desktops, 768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .discover-container .card-body {
+    padding: 8vh 4vh;
+   
+  }
+
+  .discover-container .para_main {
+    font-size: 18px;
+  }
+
+  .discover-container .card-title {
+    font-size: 22px;
+  }
+
+  .discover-container .card-text {
+    font-size: 18px;
+  }
+  .discover-container .card {
+    background-color: white;
+   max-width: 100%;
+  }
+  
+}
+
+/* Large devices (desktops, 992px to 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .discover-container .card-body {
+    padding: 4vh 0vh;
+  }
+
+  .discover-container .para_main {
+    font-size: 18px;
+  }
+
+  .discover-container .card-title {
+    font-size: 22px;
+  }
+
+  .discover-container .card-text {
+    font-size: 18px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  .discover-container .card-body {
+    padding: 9vh 5vh;
+  }
+
+  .discover-container .para_main {
+    font-size: 20px;
+  }
+
+  .discover-container .card-title {
+    font-size: 24px;
+  }
+
+  .discover-container .card-text {
+    font-size: 20px;
+  }
+} */

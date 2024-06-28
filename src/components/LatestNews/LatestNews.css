@@ -1,0 +1,32 @@
+.latest-container {
+    position: relative;
+    transform: translateY(-150px); /* Adjust this value to move the container up or down */
+    z-index: 2;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* padding: 40px;  */
+    padding: 5vh 6vh;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 100%; /* Adjust width as needed */
+    max-width: 1200px; /* Maximum width */
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  .btn-link {
+    text-decoration: none;
+    color: #717C93;
+    padding-left: 0px;
+  }
+
+  .img-responsive{
+    max-width: 100%;
+  }
+
+  .arrow-img{
+    margin-left: 7px;
+  }
+  

@@ -1,0 +1,18 @@
+.main-cardgrid .text-muted{
+    color: #3F1626 !important;
+}
+
+.main-cardgrid .card-title{
+    color: black;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.main-cardgrid .href{
+    color: #717C93;
+    margin-top: 5px;
+}
+
+.main-cardgrid .card-body{
+    padding: 22px 0px;
+}

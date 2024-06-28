@@ -1,0 +1,305 @@
+.main {
+    width: 100%;
+    height: auto;
+  }
+  .footer {
+    padding: 120px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-blend-mode: overlay;
+    background-color: rgba(59, 59, 59, 0.952);
+  }
+  .firstRow {
+    padding-bottom: 60px;
+  }
+  .col1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logo {
+    width: 100%;
+    align-self: flex-start;
+    padding-bottom: 20px;
+  }
+  .mobLogo {
+    display: none;
+  }
+  .col1 h3 {
+    align-self: flex-start;
+    text-align: start;
+    color: #cb1212;
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .col1 span {
+    font-weight: 900;
+    color: white;
+    font-size: 16px;
+  }
+  .input {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 6px;
+    padding: 13px 18px 13px 18px;
+  }
+  .input input {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 84%;
+  }
+  .input input:focus {
+    outline: none;
+  }
+  .input input::placeholder {
+    font-size: 13px;
+  }
+  .input button{
+    padding: 0px;
+  }
+  .input svg {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  .input svg:hover {
+    fill: #cb1212;
+  }
+  .col2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .linkCont {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 22px;
+    gap: 28px;
+  }
+  .linkCont h3 {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .linkCont a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease;
+  }
+  .linkCont a:hover {
+    color: rgb(225, 225, 225);
+  }
+  .info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 30px;
+    gap: 40px;
+  }
+  .mobSocials {
+    display: none;
+  }
+  .box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+    cursor: pointer;
+  }
+  .box h4 {
+    font-size: 13px;
+    color: white;
+    text-transform: none;
+    font-weight: 600;
+  }
+  .box img {
+    width: 40px;
+    height: 40px;
+  }
+  .lastRow {
+    padding: 25px 0px 25px 0px;
+    margin: 0;
+    border-top: 1px solid rgba(98, 98, 98, 0.61);
+  }
+  .socials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    transition: 0.2s ease;
+  }
+  .socials svg{
+    width: 16px;
+    height: 16px;
+  }
+  .socials a:hover{
+    background-color: red;
+  }
+  .socials a:hover svg{
+    fill: #fff;
+  }
+  .socials p {
+    color: white;
+    font-weight: 300;
+    align-self: center;
+    text-align: center;
+    padding-left: 20px;
+  }
+  .payments {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .payments img {
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+  }
+  @media (max-width: 1200px) {
+    .input {
+      padding: 11px 14px 11px 14px;
+    }
+    .input input::placeholder {
+      font-size: 11px;
+    }
+    .linkCont {
+      padding-top: 15px;
+      gap: 15px;
+    }
+    .info {
+      gap: 20px;
+    }
+  }
+  @media (max-width: 992px) {
+    .footer {
+      padding: 60px 0 0 0;
+    }
+    .firstRow {
+      padding-bottom: 30px;
+    }
+    .logo {
+      display: none;
+    }
+    .mobLogo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+    .mobLogo img {
+      width: 220px;
+    }
+    .firstRow {
+      flex-direction: column-reverse;
+    }
+    .col1 {
+      padding-top: 40px;
+      gap: 10px;
+    }
+    .col1 h3 {
+      text-align: center;
+      align-self: center;
+    }
+    .linkCont {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .info {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .info img {
+      display: none;
+    }
+    .mobSocials {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      gap: 10px;
+    }
+    .mobSocials a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #f0f0f0;
+      transition: 0.2s ease;
+    }
+    .mobSocials svg{
+      width: 16px;
+      height: 16px;
+    }
+    .mobSocials a:hover{
+      background-color: red;
+    }
+    .mobSocials a:hover svg{
+      fill: #fff;
+    }
+    .lastRow {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+    }
+    .socials {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .socials a {
+      display: none;
+    }
+    .payments {
+      justify-content: center;
+      align-items: center;
+    }
+  }

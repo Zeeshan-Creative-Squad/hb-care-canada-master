@@ -1,0 +1,100 @@
+/* ProductGallery.css */
+
+.gallery-container {
+  position: relative;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 380px; /* Adjust height as needed */
+  background-color: white;
+  background-size: cover;
+}
+
+.gallery-transform {
+  transform: translateY(-235px);
+}
+
+.gallery-section {
+  position: relative;
+  /* top: -50px; Adjust the value to overlap the hero banner */
+  background-color: white; /* White background for the gallery section */
+  padding-top: 50px; /* Adjust padding to compensate for the negative top value */
+  display: flex;
+  justify-content: center;
+  
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 10px; /* Adjust spacing between images */
+}
+
+.gallery-image {
+  width: 100%; /* Make images responsive */
+  height: 450px;
+  border-radius: 10px; /* Optional: add border radius */
+}
+
+.gallery-image2 {
+  width: 100%; /* Make images responsive */
+  height: auto;
+  transform: translateY(-170px);
+  border-radius: 10px; /* Optional: add border radius */
+}
+
+.gallery-image1 {
+  width: 100%; /* Make images responsive */
+  height: auto;
+  transform: translateY(-250px);
+  border-radius: 10px; /* Optional: add border radius */
+}
+
+
+
+.load-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.gallery .img-box{
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 23px;
+}
+
+@media (max-width: 993px){
+  .gallery-transform {
+    transform: translateY(0px);
+  }
+  .gallery-image2 {
+   
+    transform: translateY(0px);
+    
+    
+  }
+  
+  .gallery-image1 {
+  
+    transform: translateY(0px);
+    
+  }
+  .gallery-item{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}

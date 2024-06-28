@@ -1,0 +1,177 @@
+.contact-main {
+  background-color: #F9F9F9;
+  padding-top: 150px;
+}
+
+.contact-form-container {
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Change to column for mobile */
+}
+
+.contact-form-container input, 
+.contact-form-container textarea {
+  border: none;
+  border-bottom: 0.5px solid #a7a7a775;
+  border-radius: 0%;
+  resize: none;
+  background-color: transparent;
+}
+
+.contact-form-container input::placeholder,
+.contact-form-container textarea::placeholder {
+  color: #A7A7A7;
+}
+
+.left-content {
+  padding-right: 0; /* Reset padding for mobile */
+  margin-bottom: 30px; /* Add margin for spacing on mobile */
+}
+
+.contact-form-container .h1_main {
+  font-size: 32px; /* Adjust font size for mobile */
+  font-weight: 600;
+}
+
+.left-content p {
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #3b0000; /* Custom color for the submit button */
+  border-color: #3b0000;
+  border-radius: 25px;
+  width: 100%; /* Make button full-width on mobile */
+}
+
+.submit-button:hover {
+  background-color: #5a0000;
+  border-color: #5a0000;
+}
+
+.contact-form-container .para_main {
+  margin-top: 12px;
+}
+
+/* Responsive styles */
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .contact-main {
+    padding-top: 170px;
+  }
+
+  .contact-form-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact-main .h1_main {
+    font-size: 24px;
+  }
+  .contact-main .h2_main{
+    font-size: 16px;
+  }
+
+  .left-content {
+    padding-right: 0;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact-main {
+    padding-top: 120px;
+  }
+
+  .contact-form-container {
+    text-align: center;
+  }
+
+  .h1_main {
+    font-size: 28px;
+  }
+
+  .left-content {
+    padding-right: 0;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-main {
+    padding-top: 130px;
+  }
+
+  .contact-form-container {
+    text-align: center;
+  }
+
+  .h1_main {
+    font-size: 32px;
+  }
+
+  .left-content {
+    padding-right: 20px;
+  }
+
+  .submit-button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .contact-main {
+    padding-top: 150px;
+  }
+
+  .contact-form-container {
+    text-align: left;
+    flex-direction: row; /* Change to row for larger screens */
+  }
+
+  .h1_main {
+    font-size: 36px;
+  }
+
+  .left-content {
+    padding-right: 40px;
+  }
+
+  .submit-button {
+    width: 150px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .contact-main {
+    padding-top: 150px;
+  }
+
+  .contact-main .h1_main {
+    font-size: 40px;
+  }
+
+  .left-content {
+    padding-right: 40px;
+  }
+
+  .submit-button {
+    width: 150px;
+  }
+}

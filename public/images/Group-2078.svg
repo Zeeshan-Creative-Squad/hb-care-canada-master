@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <filter id="Rectangle_1794" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2078" data-name="Group 2078" transform="translate(-242 -676)">
+    <g transform="matrix(1, 0, 0, 1, 242, 676)" filter="url(#Rectangle_1794)">
+      <rect id="Rectangle_1794-2" data-name="Rectangle 1794" width="30" height="30" rx="4" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_zocial-email" data-name="Icon zocial-email" d="M.072,11.557V4.8q0-.012.035-.223l3.979,3.4L.119,11.792a1,1,0,0,1-.047-.235ZM.6,4.1a.506.506,0,0,1,.2-.035H11.517a.665.665,0,0,1,.211.035L7.737,7.519l-.528.423L6.164,8.8,5.12,7.942l-.528-.423ZM.612,12.25l4-3.839L6.164,9.667,7.714,8.411l4,3.839a.564.564,0,0,1-.2.035H.8a.532.532,0,0,1-.188-.035Zm7.63-4.273,3.968-3.4a.7.7,0,0,1,.035.223v6.761a.9.9,0,0,1-.035.235Z" transform="translate(259.557 689.666)" fill="#3f1626"/>
+  </g>
+</svg>

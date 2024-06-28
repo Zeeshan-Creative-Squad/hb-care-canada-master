@@ -1,0 +1,27 @@
+
+.pagination-container {
+    display: flex;
+    justify-content: center; /* Center align the buttons horizontally */
+    margin-top: 20px; /* Add space between case study items and pagination */
+    padding-bottom: 3rem;
+}
+
+.circle-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Create circular buttons */
+    background-color: transparent; /* Button background color */
+    color: #2D2D2D; /* Button text color */
+    border: 2px solid grey; /* Remove button border */
+    margin: 0 5px; /* Add margin between buttons */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition for smooth color change */
+}
+
+.circle-button:hover {
+     /* Change text color to orange on hover */
+    background-color: #3F1626; /* Change background color to orange with transparency */
+    opacity: 1; /* Set opacity to full on hover */
+    border: none;
+    color: #fff;
+}

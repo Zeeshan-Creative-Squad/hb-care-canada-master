@@ -1,0 +1,76 @@
+.mission-container {
+    background-color: #ffffff;
+    padding: 20px 50px;
+  }
+  
+  /* .mission-container .h1_main {
+    font-weight: 700;
+    font-size: 35px;
+    padding-left: 20px;
+    color: #1F2F54;
+    letter-spacing: 1px;
+  }
+  
+  .mission-container .h2_main {
+    color: rgb(252, 89, 89);
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 20px;
+  } */
+  
+  .mission-container .h3_main {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .mission-container .left-section {
+    padding: 15vh 0; /* Adjust padding using viewport units */
+  }
+  
+  .mission-container .right-section {
+    padding: 20px 20px;
+    text-align: left;
+    margin-top: 2rem;
+  }
+  
+  .mission-container .large-img {
+    max-width: 100%; /* Ensure image does not exceed its container */
+    height: auto; /* Allow the height to adjust automatically */
+  }
+  
+  .mission-container .flex-container {
+    display: flex;
+    align-items: left; /* Center vertically */
+
+  }
+  
+  .mission-container .image-container img {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    margin-top: 20px;
+  }
+
+  
+  .mission-container .text-container   {
+    margin-bottom: 20px; /* Add some space between sections of text */
+    
+    
+  }
+  
+  .mission-container .upper-paragraph {
+    margin-top: 28px;
+  }
+
+  .mission-container .connect-button{
+    margin-top: 30px;
+    background-color: rgba(255, 0, 0); /* Transparent background */
+    color: rgb(255, 255, 255); /* Red text color */
+    border: 1px solid red; /* Red border */
+    padding: 8px 22px; /* Padding inside the button */
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+  
+    cursor: pointer; /* Pointer cursor on hover */
+    
+  }
+

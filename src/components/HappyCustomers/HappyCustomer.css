@@ -1,0 +1,17 @@
+.customer-container{
+    padding: 85px 0px;
+  }
+  
+  .customer-container h3.display-4 {
+    font-size: 3.6rem;
+    font-weight: bold;
+  }
+  
+  .customer-container p {
+    font-size: 1rem;
+  }
+
+  .customer-container .custom-icons{
+    height: 70px;
+  }
+  

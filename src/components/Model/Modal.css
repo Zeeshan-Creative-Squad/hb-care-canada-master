@@ -1,0 +1,98 @@
+/* Modal.css */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
+}
+
+.modal-container.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container .modal-main {
+  position: fixed;
+  background: transparent;
+  color: black;
+  width: fit-content;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.modal-container .overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.472);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.modal-container .modal-main .close-modal {
+  padding: 5px 11px;
+  border: none;
+  background-color: rgb(240, 74, 74);
+  border-radius: 5px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  right: 60px;
+  color: white;
+}
+
+.modal-container .arrow-btn {
+  background: rgba(255, 255, 255, 0.297);
+  border-radius: 50%;
+  margin: 0 3px;
+  border: none;
+}
+
+.modal-container .arrow-btn img {
+  width: 30px;
+  height: 35px;
+}
+
+.modal-container .modal-img {
+  width: 400px;
+  height: 500px;
+}
+
+.modal-container .iframe-vid {
+  width: 80vw;
+  height: 70vh;
+  min-height: 400px;
+}
+
+.modal-container .swiper {
+  max-width: 400px;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+@media(max-width: 450px) {
+  .modal-container .modal-main {
+      width: 100%;
+  }
+
+  .modal-container .modal-img {
+      height: 400px;
+      max-height: 80vh;
+      width: 300px;
+  }
+
+  .modal-container .swiper {
+      width: 300px;
+  }
+}

@@ -1,0 +1,121 @@
+.values-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #FBFBFB;
+  min-height: 70vh; /* Standard section height */
+}
+
+.values-container .left-box {
+  display: flex;
+  flex-direction: column; /* Stack the boxes vertically */
+  gap: 20px; /* Space between the boxes */
+}
+
+.values-container .right-box {
+  flex: 1;
+  padding: 20px;
+}
+
+.values-container .box-content {
+  display: flex;
+  align-items: flex-start; /* Align items to the start of the container */
+  padding: 28px; /* Add padding inside the boxes */
+  border-radius: 12px;
+  width: auto; /* Full width of the parent container */
+  max-width: 800px; /* Adjust the max-width as needed */
+  min-height: 200px; /* Adjust the min-height as needed */
+  background-color: rgb(212, 212, 212); /* Optional: Background color */
+  margin-left: 280px;
+}
+
+.values-container .box-content img {
+  width: auto;
+  height: auto;
+  max-width: 150px; /* Adjust the max-width as needed */
+  margin-right: 20px; /* Space between the image and the text */
+}
+
+.values-container .text-content {
+  display: flex;
+  flex-direction: column; /* Stack heading and text vertically */
+}
+
+.values-container .h3_main {
+  margin: 0 0 10px 0; /* Add space below the heading */
+  font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.values-container .para_main {
+  margin: 0; /* Remove default margin */
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.values-container .right-box button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.values-container .section-container {
+  padding: 20px;
+  border-radius: 10px; /* Optional: Add border radius for rounded corners */
+  margin-top: 20px; /* Adjust margin to move the section down */
+}
+
+.values-container .h2_main {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.values-container .h1_main {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+ font-weight: 600;
+}
+
+.values-container .text-container {
+  margin-top: 20px;
+}
+
+.values-container .para_main {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+
+.values-container .connect-button {
+  padding: 10px 30px;
+  background-color: #EE202D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.values-container .connect-button:hover {
+  background-color: red;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .values-container .box-content {
+    margin-left: 0; /* Remove left margin on small screens */
+  }
+  .values-container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .section-container {
+    order: -1; /* Move section container to the top */
+    margin-bottom: 20px; /* Add some space between sections */
+  }
+
+  .left-box {
+    width: 100%; /* Take full width of the container */
+    margin-left: 0; /* Reset margin */
+  }
+}
+

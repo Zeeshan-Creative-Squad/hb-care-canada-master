@@ -1,0 +1,87 @@
+/* Container styling */
+.container-custom {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 12px; /* Adjust padding as needed */
+  background-color: #FFFFFF;
+}
+
+/* Text styling */
+.container-custom .h2-main {
+  color: #3F1626; 
+  font-size: 22px;
+  margin-top: 22px;
+}
+
+.container-custom .font-weight-bold-custom {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 45px;
+  margin-top: 22px;
+}
+
+/* Card styling */
+.container-custom .card-custom {
+  /* height: 100%; */
+  border-radius: 10px;
+  /* padding: 5px 12px; */
+  box-shadow: 0px 4px 20px -0px rgba(0,0,0,.1), /* Top shadow */
+  0px 4px 20px -0px rgba(0,0,0,.1);  /* Bottom shadow */
+}
+
+.container-custom .card-title-custom {
+  font-weight: bold;
+  color: #2D2D2D;
+  margin-top: 16px;
+}
+
+.container-custom .card-text-custom {
+  color: #717C93; /* Adjust the color if needed */
+  padding: 16px 0px;
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container-custom .font-weight-bold-custom {
+      font-size: 24px;
+  }
+  .container-custom .card-custom {
+      padding: 5px 6px;
+  }
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .container-custom .font-weight-bold-custom {
+      font-size: 30px;
+  }
+  .container-custom .card-custom {
+      padding: 5px 8px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .container-custom .font-weight-bold-custom {
+      font-size: 35px;
+  }
+  .container-custom .card-custom {
+      padding: 5px 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-custom .font-weight-bold-custom {
+      font-size: 45px;
+  }
+  .container-custom .card-custom {
+      padding: 5px 12px;
+  }
+}

@@ -1,0 +1,134 @@
+.ourservices-container {
+    background-color: #3F1626;
+    padding: 20px 50px;
+  }
+  
+  /* .ourservices-container .head-h1 {
+    font-weight: 700;
+    font-size: 35px;
+    padding-left: 20px;
+    color: #1F2F54;
+    letter-spacing: 1px;
+  } */
+  
+  /* .mission-container .h2_main {
+    color: rgb(252, 89, 89);
+    margin-bottom: 18px;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 20px;
+  } */
+
+  .ourservices-container .head-h1{
+    font-size: 43px;
+  font-weight: 500;
+  color: #D3C6B8;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 16px;
+  }
+  
+  .ourservices-container .h3_main {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  .ourservices-container .left-section {
+    padding: 18vh 3vh;
+  }
+  
+  .ourservices-container .right-section {
+    padding: 20px 20px;
+    text-align: left;
+    margin-top: 2rem;
+  }
+  
+  .ourservices-container .large-img {
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .ourservices-container .flex-container {
+    display: flex;
+    align-items: left;
+  }
+  
+  .ourservices-container .image-container img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .ourservices-container .text-container {
+    margin-bottom: 20px;
+  }
+  
+  .ourservices-container .upper-paragraph {
+    margin-top: 28px;
+  }
+
+  .ourservices-container .para_main{
+    color: #FBFBFB;
+    line-height: 2;
+  }
+  
+  .ourservices-container .connect-button {
+    margin-top: 30px;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Tablets and below */
+  @media (max-width: 992px) {
+    .row {
+      flex-direction: column-reverse; /* Stack the columns vertically */
+    }
+  
+    .col-lg-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .ourservices-container .left-section {
+      padding: 5vh 3vh;
+    }
+  
+    .ourservices-container .right-section {
+      padding: 10px 10px;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 576px) {
+    .ourservices-container {
+      padding: 45px 20px;
+    }
+  
+    .ourservices-container .left-section {
+      padding: 5vh 1vh;
+    }
+  
+    .ourservices-container .right-section {
+      padding: 5px 5px;
+      text-align: center;
+    }
+  
+    .h2_main {
+      font-size: 1.5rem;
+    }
+  
+    .h1_main {
+      font-size: 2rem;
+    }
+  
+    .para_main {
+      font-size: 0.9rem;
+    }
+  
+    .button-secondary {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  

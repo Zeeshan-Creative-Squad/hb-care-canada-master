@@ -1,0 +1,167 @@
+.about-container {
+  background-color: #ffffff;
+  padding: 20px 50px;
+}
+
+/* .h1_main {
+  font-weight: 400;
+  font-size: 35px;
+} */
+
+/* .h2_main {
+  color: rgb(252, 89, 89);
+  margin-bottom: 18px;
+  font-size: 22px;
+} */
+
+/* .h3_main {
+  font-size: 22px;
+  font-weight: 400;
+} */
+
+.about-container .left-section {
+  padding: 10vh 0vw; /* Adjust padding using viewport units */
+}
+
+.right-section {
+  padding: 20px 20px;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.large-img {
+  max-width: 100%; /* Ensure image does not exceed its container */
+  height: auto; /* Allow the height to adjust automatically */
+  margin-top: 50px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center; /* Center vertically */
+}
+
+/*  */
+
+/* .image-container .img2{
+  margin-top: 8px;
+} */
+/* 
+.img1{
+  margin-bottom: 20px;
+}
+.img2{
+  margin-top: 12px;
+} */
+
+.about-container .text-container {
+   /* Takes up 2/3 of the container */
+  margin-top: 20px;
+}
+
+.about-container .text-container > div {
+  margin-bottom: 20px; /* Add some space between sections of text */
+  /* margin-left: 26px; */
+}
+
+.upper-paragraph {
+  margin-top: 28px;
+}
+
+.about-container .para_main{
+  max-width: 95%;
+}
+
+.about-container .h1_main{
+  font-size: 2.4rem;
+}
+
+.about-container .img1{
+}
+
+/* Media Queries for larger screens */
+
+/* @media (min-width: 576px) {
+  .h1_main {
+      font-size: 30px; 
+  }
+
+  .h2_main {
+      font-size: 22px; 
+  }
+
+  .h3_main {
+      font-size: 22px; 
+  }
+  
+} */
+
+@media (max-width: 768px) {
+  .about-container {
+      padding: 20px 40px; /* Increase padding */
+  }
+
+  .flex-container {
+      flex-direction: row; /* Arrange items in a row */
+      text-align: left; /* Align text to the left */
+  }
+
+  .about-container .text-container {
+    
+
+  }
+
+  .about-container .text-container > div {
+      margin-left: 0px; 
+  }
+  .about-container .para_main{
+    max-width: 100%;
+  }
+  .about-container .left-section {
+    padding: 8vh 7vw; 
+  }
+  .image-container img {
+    width: 100%; 
+    margin-bottom: 110%;
+  
+  }
+  
+  .image-container .img2{
+    margin-top: 12px;
+  }
+  .large-img {
+    
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-container {
+      padding: 20px 50px; 
+  }
+
+  .about-container .left-section {
+      padding: 10vh 5vw; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-container .left-section {
+      padding: 10vh 0vw; 
+  }
+
+  .right-section {
+      padding: 20px 40px; 
+  }
+
+  .h1_main {
+      font-size: 39px; 
+  }
+
+  .about-container .h2_main {
+      font-size: 24px; 
+  }
+
+  .h3_main {
+      font-size: 24px; 
+  }
+}

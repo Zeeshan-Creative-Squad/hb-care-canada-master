@@ -1,0 +1,183 @@
+.success-container {
+  background-color: #ffffff;
+  padding: 20px 50px;
+}
+
+
+.success-container .h2_main {
+  color: rgb(252, 89, 89);
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.success-container .h3_main {
+  font-size: 22px;
+  font-weight: 400;
+  
+}
+
+.success-container .left-section {
+  padding: 10vh 7vw;
+  
+}
+
+.success-container .right-section {
+  padding: 20px 20px;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.success-container .large-img {
+  max-width: 100%;
+  /* Ensure image does not exceed its container */
+  height: auto;
+  /* Allow the height to adjust automatically */
+}
+
+.success-container .flex-container {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+}
+
+.success-container .image-container img {
+  width: 100%;
+  /* Ensure the image takes up the full width of its container */
+  margin-top: 20px;
+}
+
+.success-container .text-container {
+  flex: 2;
+  /* Takes up 2/3 of the container */
+  margin-top: 20px;
+}
+
+.success-container .text-container>div {
+  margin-bottom: 20px;
+  /* Add some space between sections of text */
+  margin-left: 26px;
+}
+
+.success-container .upper-paragraph {
+  margin-top: 28px;
+}
+
+
+
+
+
+
+
+
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  width: 100%;
+  gap: 32px;
+
+}
+
+.testimonial {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.testimonial img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+.para_main {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* Number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+
+/* For mobile devices */
+@media (max-width: 767px) {
+  .success-container {
+    background-color: #ffffff;
+    padding: 20px;
+    /* Adjust padding for smaller screens */
+  }
+
+  .success-container .left-section .d-flex {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    /* Display testimonials in a column */
+    align-items: center;
+    /* Center testimonials horizontally */
+  }
+
+  .testimonial {
+    margin-bottom: 50px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .testimonial img {
+    width: 40px;
+    /* Decrease image size for smaller screens */
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  /* Center the button */
+  .success-container .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    /* Ensure the container takes the full width */
+    margin-top: 20px;
+    /* Add margin if needed */
+  }
+
+  .success-container .btn-container .btn-primary {
+    width: auto;
+    /* Adjust button width if needed */
+    max-width: 100%;
+    /* Ensure button does not exceed container width */
+  }
+}
+
+
+/* For tablets and larger screens */
+@media (min-width: 768px) {
+  .success-container {
+    padding: 20px 50px;
+    /* Keep original padding for tablets and larger screens */
+  }
+
+  .testimonial {
+    margin-bottom: 150px;
+    /* Keep original margin for tablets and larger screens */
+  }
+
+}
+
+/* For laptops and larger screens */
+@media (min-width: 992px) {
+  .testimonial {
+    margin-bottom: 200px;
+    /* Increase margin for laptops and larger screens */
+  }
+}

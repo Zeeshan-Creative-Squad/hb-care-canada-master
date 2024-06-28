@@ -1,0 +1,44 @@
+.home-hero {
+    position: relative;
+    height: 100vh;
+    background: url('../../../public/images/Home-Page-Hero.jpg') no-repeat center center/cover;
+  }
+  
+  .Homehero-content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Homehero-content {
+    color: white;
+    max-width: 850px;
+    padding: 20px;
+    margin-top: 50px;
+    
+  }
+  
+  .Homehero-content h1 {
+    font-size: 2.9rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .Homehero-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  /* .hero-content .btn-primary {
+    background-color: #F5E1DA;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+  } */
+  

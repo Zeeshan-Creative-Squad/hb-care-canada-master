@@ -1,0 +1,118 @@
+/* Main container styling */
+.maindiv {
+  background-color: #4c1d28;
+  min-height: 100vh;
+  padding: 12vh 2vh;
+}
+
+/* Team container styling */
+.team-container {
+  background-color: #4c1d28;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team-container .headtop {
+  color: #FBFBFB;
+  font-size: 22px;
+}
+
+.team-container .head-h1 {
+  margin-bottom: 22px;
+  font-size: 28px;
+  color: #D3C6B8;
+}
+
+/* Card styling */
+.team-container .card {
+  background-color: transparent;
+}
+
+.card-text {
+  color: #FFFFFF;
+}
+
+.card-title {
+  color: #D3C6B8;
+}
+
+/* Media queries for responsiveness */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .maindiv {
+      padding: 5vh 1vh;
+  }
+
+  .headtop {
+      font-size: 18px;
+  }
+
+  .team-container .head-h1 {
+      font-size: 22px;
+      color: #D3C6B8;
+  }
+
+  .card {
+      margin-bottom: 2vh;
+  }
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .maindiv {
+      padding: 7vh 2vh;
+  }
+
+  .headtop {
+      font-size: 20px;
+  }
+
+  .team-container .head-h1 {
+      font-size: 24px;
+  }
+
+  .card {
+      margin-bottom: 3vh;
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .maindiv {
+      padding: 8vh 2vh;
+  }
+
+  .headtop {
+      font-size: 21px;
+  }
+
+  .team-container .head-h1 {
+      font-size: 26px;
+  }
+
+  .card {
+      margin-bottom: 4vh;
+  }
+}
+
+/* Large devices (large desktops, 992px and up) */
+@media (min-width: 992px) {
+  .maindiv {
+      padding: 12vh 2vh;
+    
+  }
+
+  .headtop {
+      font-size: 22px;
+  }
+
+  .team-container .head-h1 {
+      font-size: 28px;
+  }
+
+  .card {
+      margin-bottom: 4vh;
+  }
+}

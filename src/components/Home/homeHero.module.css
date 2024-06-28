@@ -1,0 +1,254 @@
+.Hero {
+    width: 100%;
+    min-height: 90vh;
+    max-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    background-image: url("../../../public/images/Group2028.jpg");
+  }
+  
+  
+  
+    .heading_main {
+      font-family: "Mulish", sans-serif;
+      font-size: 32px;
+      color: #1d1d1d;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .backgroundImage {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    
+    .Hero_Content {
+      max-width: 1320px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 25px;
+      flex-grow: 1;
+      
+  
+    }
+    .Hero_Content h1 {
+      font-weight: 900;
+      color: white;
+      letter-spacing: 3px;
+      text-align: center;
+      align-self: center;
+      font-size: 88px;
+    }
+    .Hero_Content h3 {
+      text-align: center;
+      align-self: center;
+      color: white;
+      letter-spacing: 4px;
+    }
+  
+    .Hero_Content p{
+      color: white;
+      text-align: center;
+    }
+  
+    .heading_capital .red-text{
+      color: red;
+    }
+    .logosCont {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+      height: 120px;
+    }
+    
+  
+    
+  
+    
+  
+  
+  
+    @media (max-width: 480px) {
+      .Hero_Content h1 {
+        font-size: 30px; /* Decrease font size for smaller screens */
+        padding: 0 10px; /* Adjust padding for smaller screens */
+      }
+    
+      .Hero_Content h3 {
+        font-size: 14px; /* Decrease font size for smaller screens */
+        padding: 0 10px; /* Adjust padding for smaller screens */
+      }
+    
+      .logosCont {
+        gap: 5px; /* Decrease gap between icons for smaller screens */
+        padding: 5px; /* Adjust padding for smaller screens */
+      }
+    }
+    
+    @media (max-width: 1200px) {
+      .Hero_Content h1 {
+        font-size: 55px;
+      }
+    }
+    @media (max-width: 767px) {
+      .Hero {
+        min-height: 60vh;
+        max-height: 60vh;
+      }
+      
+      .Hero_Content h1 {
+        padding: 0 3% 0 3%;
+      }
+      .Hero_Content h3 {
+        padding: 0 20% 0 20%;
+      }
+      .Hero_Content h1 {
+        font-size: 35px;
+      }
+      .Hero_Content h3 {
+        font-size: 16px;
+      }
+    }
+    @media (min-height: 1100px) {
+      .video {
+        /* height: 65%; */
+      }
+    }.Hero {
+  width: 100%;
+  min-height: 90vh;
+  max-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 30px;
+  background-image: url("../../../public/images/Group2028.jpg");
+}
+
+
+
+  .heading_main {
+    font-family: "Mulish", sans-serif;
+    font-size: 32px;
+    color: #1d1d1d;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .backgroundImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  
+  .Hero_Content {
+    max-width: 1320px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    flex-grow: 1;
+    
+
+  }
+  .Hero_Content h1 {
+    font-weight: 900;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    align-self: center;
+    font-size: 88px;
+  }
+  .Hero_Content h3 {
+    text-align: center;
+    align-self: center;
+    color: white;
+    letter-spacing: 4px;
+  }
+
+  .Hero_Content p{
+    color: white;
+    text-align: center;
+  }
+
+  .heading_capital .red-text{
+    color: red;
+  }
+  .logosCont {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 120px;
+  }
+  
+  
+
+  
+
+
+
+  @media (max-width: 480px) {
+    .Hero_Content h1 {
+      font-size: 30px; /* Decrease font size for smaller screens */
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .Hero_Content h3 {
+      font-size: 14px; /* Decrease font size for smaller screens */
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .logosCont {
+      gap: 5px; /* Decrease gap between icons for smaller screens */
+      padding: 5px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .Hero_Content h1 {
+      font-size: 55px;
+    }
+  }
+  @media (max-width: 767px) {
+    .Hero {
+      min-height: 60vh;
+      max-height: 60vh;
+    }
+    
+    .Hero_Content h1 {
+      padding: 0 3% 0 3%;
+    }
+    .Hero_Content h3 {
+      padding: 0 20% 0 20%;
+    }
+    .Hero_Content h1 {
+      font-size: 35px;
+    }
+    .Hero_Content h3 {
+      font-size: 16px;
+    }
+  }
+  @media (min-height: 1100px) {
+    .video {
+      /* height: 65%; */
+    }
+  }

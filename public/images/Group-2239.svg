@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.808" height="63.809" viewBox="0 0 63.808 63.809">
+  <defs>
+    <filter id="Rectangle_1714" x="0" y="0" width="63.808" height="63.809" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2239" data-name="Group 2239" transform="translate(-456.857 -834.45)">
+    <g transform="matrix(1, 0, 0, 1, 456.86, 834.45)" filter="url(#Rectangle_1714)">
+      <rect id="Rectangle_1714-2" data-name="Rectangle 1714" width="45.808" height="45.809" rx="5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_akar-youtube-fill" data-name="Icon akar-youtube-fill" d="M21.393,8.279a2.536,2.536,0,0,0-.7-1.156,2.777,2.777,0,0,0-1.218-.675C17.768,6,10.918,6,10.918,6a69.753,69.753,0,0,0-8.548.428,2.877,2.877,0,0,0-1.218.692A2.637,2.637,0,0,0,.444,8.278a26.482,26.482,0,0,0-.444,5,26.434,26.434,0,0,0,.444,5,2.573,2.573,0,0,0,.706,1.155,2.818,2.818,0,0,0,1.221.676c1.732.45,8.548.45,8.548.45a69.913,69.913,0,0,0,8.559-.428,2.777,2.777,0,0,0,1.218-.675,2.531,2.531,0,0,0,.7-1.156,25.835,25.835,0,0,0,.456-5,24.2,24.2,0,0,0-.455-5.022ZM8.741,16.4V10.164l5.7,3.117Z" transform="translate(477.834 850.075)" fill="#3f1626"/>
+  </g>
+</svg>
