@@ -41,7 +41,7 @@ const Mobilenav = (props) => {
           <div className={props.landingPage && 'd-none'}>
             <div className="d-flex justify-content-between align-content center navitems_cs1">
               <li style={{ color: "white" }}>
-                <Link to="/digital-media-services-in-canada"> Home </Link>
+                <Link onClick={() => props.hamburgerdropdown(transfer)} to="/"> Home </Link>
               </li>
 
               <i
@@ -173,7 +173,7 @@ const Mobilenav = (props) => {
           <div className={props.landingPage && 'd-none'}>
             <div className="d-flex justify-content-between align-content center navitems_cs1">
               <li>
-                <Link to="/who-we-are">About</Link>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/about"> About </Link>
               </li>
             </div>
           </div>
@@ -181,23 +181,23 @@ const Mobilenav = (props) => {
             
             <li>
               
-              <Link to="/portfolio">Services</Link>
+            <Link onClick={() => props.hamburgerdropdown(transfer)} to="/services"> Services </Link>
             </li>
           </div>
           <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
             <li>
-              <Link to="/blogs">Product</Link>
+            <Link onClick={() => props.hamburgerdropdown(transfer)} to="/product"> Product </Link>
             </li>
           </div>
           <div>
             <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
               <li>
-                <Link to="/contact">Blogs</Link>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/blogs"> Blogs </Link>
               </li>
             </div>
             <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
               <li>
-                <Link to="/contact">Contact Us</Link>
+              <Link onClick={() => props.hamburgerdropdown(transfer)} to="/contact"> Contact Us </Link>
               </li>
             </div>
           </div>
