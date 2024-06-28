@@ -1,51 +1,32 @@
 {
-  "name": "client-lms-software-frontend",
-  "proxy": "http://127.0.0.1:5000",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "ag-grid-community": "^31.1.1",
-    "ag-grid-react": "^31.1.1",
-    "axios": "^1.4.0",
-    "bootstrap": "^5.3.1",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.8.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-redux": "^8.1.2",
-    "react-router-dom": "^6.14.2",
-    "react-scripts": "^5.0.1",
-    "redux": "^4.2.1",
-    "redux-devtools-extension": "^2.13.9",
-    "redux-thunk": "^2.4.2",
-    "swiper": "^10.3.1",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "client-lms-software-backend",
+  "version": "1.0.0",
+  "description": "Learning Management System Software",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node backend/server",
+    "server": "nodemon backend/server ",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --force --prefix frontend && npm run build --prefix frontend"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Taha Sheikh",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4",
+    "mongoose-sequence": "^6.0.1",
+    "nodemailer": "^6.9.4",
+    "react-icons": "^5.2.1",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "@faker-js/faker": "^8.0.2"
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
   }
 }
