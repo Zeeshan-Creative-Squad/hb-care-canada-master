@@ -1,5 +1,5 @@
 {
-  "name": "client-lms-software-backend",
+  "name": "backend",
   "version": "1.0.0",
   "description": "Learning Management System Software",
   "main": "index.js",
