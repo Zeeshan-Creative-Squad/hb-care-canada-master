@@ -5,14 +5,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./NavbarCS.css";
 import "./Mobilenav.css";
 import Mobilenav from "./Mobilenav";
-import { useState } from "react";
 import styles from "./Navbar.module.css";
 import { Col, Container, Row } from "react-bootstrap";
+import { useState, useEffect, useRef } from "react";
 
 const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVideo }) => {
+  const [menuState, setMenuState] = useState(false);
+  const [isDropdownOpenDesk, setIsDropdownOpenDesk] = useState(false);
+  const [isDropdownOpenTopical, setIsDropdownOpenTopical] = useState(false);
+  const [hoveredItem, setHoveredItem] = useState(null);
   const navitate = useNavigate();
   const [selected5, setSelected5] = useState(false);
   const [style, setStyle] = useState({ display: "none" });
+
+  const handleMouseEnter = (item) => {
+    setHoveredItem(item);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredItem(null);
+  };
 
   const hamburgerdropdown = (state) => {
     setSelected5(!state);
@@ -24,6 +36,45 @@ const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVid
   const mouseLeaveHandler = () => {
     setStyle({ display: "none" });
   };
+
+  const navigate = useNavigate();
+  const dropdownRef = useRef();
+  const dropdownTopical = useRef();
+
+
+  const services = [
+    { name: "Barber Razors", link: "/barber-razors" },
+    { name: "Barber Scissors", link: "/barber-scissors" },
+    { name: "Eyebrow Tweezers", link: "/eyebrow-tweezers" },
+    { name: "Eyelash Tweezers", link: "/eyelash-tweezers" },
+    { name: "NailCutting", link: "/nailcutting" },
+    { name: "NailCutting Scissor", link: "/nailcutting-scissor" },
+    { name: "Nippers", link: "/nipper" },
+    { name: "Pushers", link: "/pushers" },
+    { name: "Medical Tools", link: "/medical-tools" },
+    { name: "Pedicure FootFilers", link: "/pedicure-footfilers" },
+
+  ];
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target) && isDropdownOpenDesk) {
+        setIsDropdownOpenDesk(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [isDropdownOpenDesk]);
+
+  const menuClick = () => {
+    setMenuState((prev) => !prev);
+  };
+
+
 
   return (
     <>
@@ -43,7 +94,7 @@ const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVid
           <Container>
             <div className={styles.nav}>
               <h1 onMouseEnter={mouseLeaveHandler}>
-                <Link to="/home">
+                <Link to="/">
                   <img
                     src="/images/hbcare-logo.png"
                     className={styles.logo}
@@ -86,17 +137,32 @@ const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVid
                 >
                   Services
                 </NavLink>
-                <NavLink
-                  onMouseEnter={mouseLeaveHandler}
-                  className={({ isActive }) =>
-                    isActive
-                      ? `${styles.activeLink} ${styles.link}`
-                      : styles.link
-                  }
-                  to="/product"
+                <div className="navigation-dropdown">
+      <div className="dropdown-trigger d-flex align-items-center"
+           onMouseEnter={() => handleMouseEnter('notes')}
+           onMouseLeave={handleMouseLeave}>
+        <span className="nav-links font-play">Product</span>
+      </div>
+      <div className={`dropdown-content ${hoveredItem === 'notes' ? 'open' : 'd-none'}`}
+           onMouseEnter={() => handleMouseEnter('notes')}
+           onMouseLeave={handleMouseLeave}>
+        <div className="d-flex align-item-center gap-5">
+          <div>
+            {services.map((service, index) => (
+              <div key={index}>
+                <Link
+                  to={service.link}
+                  className="nav-links font-play dropdown-item text-start"
+                  onClick={() => setHoveredItem(null)}
                 >
-                  Product
-                </NavLink>
+                  <p className="itemsof-dropdown mb-0">{service.name}</p>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
                 <NavLink
                   onMouseEnter={mouseLeaveHandler}
                   className={({ isActive }) =>
@@ -104,7 +170,7 @@ const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVid
                       ? `${styles.activeLink} ${styles.link}`
                       : styles.link
                   }
-                  to="/blogs"
+                  to="/news"
                 >
                   Blogs
                 </NavLink>
@@ -132,7 +198,7 @@ const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVid
                   </a>
                 }
                 <a href="tel: +1-647-860-5083" onMouseEnter={mouseLeaveHandler}>
-                  <button className="primary-button">Let's Connect</button>
+                  <button className="primary-button">Get In Touch!</button>
                 </a>
               </div>
             </div>
@@ -251,7 +317,7 @@ const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVid
           <div className="container menu_cs_1 px-sm-3 px-4  d-flex justify-content-space-between align-content-center ">
             <h1
               className="img_h1_cs1 text-center"
-              onClick={() => navitate("/home")}
+              onClick={() => navitate("/")}
             >
               <img src="/images/Group-2272.svg" className="img-fluid" alt="logo" />
             </h1>

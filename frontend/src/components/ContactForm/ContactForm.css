@@ -5,7 +5,7 @@
 
 .contact-form-container {
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 55px 20px;
   display: flex;
   align-items: center;
   flex-direction: column; /* Change to column for mobile */
@@ -161,6 +161,7 @@
 @media (min-width: 1200px) {
   .contact-main {
     padding-top: 150px;
+    padding-bottom: 50px;
   }
 
   .contact-main .h1_main {

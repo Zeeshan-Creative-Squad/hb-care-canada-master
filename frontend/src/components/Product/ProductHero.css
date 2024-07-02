@@ -17,7 +17,6 @@
 
 .product-hero .hero-content {
   color: white;
-  max-width: 850px;
   padding: 20px;
   text-align: center;
 }
@@ -37,7 +36,8 @@
   display: flex;
   justify-content: center;
   gap: 15px;
-  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .product-button {
@@ -48,17 +48,14 @@
   border-radius: 50px;
   font-size: 16px;
   cursor: pointer;
- 
+  width: 250px;
 }
 
-.product-button .active {
+.product-button.active {
   background-color: #D3C6B8;
   color: #3F1626;
 }
 
-/* Media Queries for responsiveness */
-
-/* Large devices (desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .product-hero .hero-content h1 {
     font-size: 4rem;
@@ -69,8 +66,10 @@
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1199px) {
+  .product-hero {
+    height: 120vh;
+  }
   .product-hero .hero-content h1 {
     font-size: 3rem;
   }
@@ -79,14 +78,23 @@
     font-size: 1rem;
   }
 
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .product-button {
-    padding: 10px 40px;
-    font-size: 14px;
+    padding: 8px 30px;
+    font-size: 12px;
+    width: 100%;
+    max-width: 250px;
   }
 }
 
-/* Small devices (phones, less than 768px) */
 @media (max-width: 767px) {
+  .product-hero {
+    height: 120vh;
+  }
   .product-hero .hero-content h1 {
     font-size: 2.1rem;
   }
@@ -95,9 +103,15 @@
     font-size: 0.875rem;
   }
 
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .product-button {
     padding: 8px 30px;
     font-size: 12px;
-    
+    width: 100%;
+    max-width: 250px;
   }
 }

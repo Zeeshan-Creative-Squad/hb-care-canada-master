@@ -59,14 +59,25 @@ const footerHero = () => {
 
 
         <div className="footer-section-right">
+        <h2 className='head-h1'>Get In Touch</h2>
           <p className='specific-paragraph'>
-            <img src="/images/gmail-icon.png" alt="Envelope" className="contact-icon" /> sales@hbcarecanada.com
+          
+            <img src="/images/gmail-icon.png" alt="Envelope" className="contact-icon" /> 
+            <a href="mailto:sales@hbcarecanada.com" className="contact-link">sales@hbcarecanada.com</a>
           </p>
           <p className='specific-paragraph'>
-            <img src="/images/phone-icon.png" alt="Phone" className="contact-icon" /> 647-836-6940, 289-275-5050
+            <img src="/images/phone-icon.png" alt="Phone" className="contact-icon" /> 
+            <a href="tel:+16478366940, +12892755050" className="contact-link">647-836-6940, 289-275-5050</a>
           </p>
           <p className='specific-paragraph'>
-            <img src="/images/location-icon.png" alt="Map Marker" className="contact-icon" />  50 Steeles Ave E, Unit 218,<br/>  Milton ON L9T 4W9
+            <img src="/images/location-icon.png" alt="Map Marker" className="contact-icon" /> 
+            <a href="https://www.google.com/maps/search/?api=1&query=50+Steeles+Ave+E,+Unit+218,+Milton,+ON+L9T+4W9" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     className="contact-link"
+  >
+    50 Steeles Ave E, Unit 218,<br/> Milton ON L9T 4W9
+  </a>
           </p>
         </div>
 
@@ -77,7 +88,7 @@ const footerHero = () => {
       <div className="blog-subfooter">
         <hr className="divider" />
         <div className="footer-content">
-          <p className="p-text">Maintained & Managed by <a href='https://www.creativesquad.ca/'>Creative Squad</a></p>
+          <p className="p-text">Made With ❤️ By <a href="https://www.creativesquad.ca" target="blank">Creative Squad </a></p>
           <p className="p-text text-center">&copy; 2024 HB Care Canada  |  All rights reserved</p>
 
           <div className="social-icons-bottom">

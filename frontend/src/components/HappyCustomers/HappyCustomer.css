@@ -1,17 +1,73 @@
-.customer-container{
-    padding: 85px 0px;
-  }
-  
-  .customer-container h3.display-4 {
-    font-size: 3.6rem;
-    font-weight: bold;
-  }
-  
-  .customer-container p {
-    font-size: 1rem;
+.customer-container {
+  padding: 85px 0px;
+}
+
+.customer-container .head-h1 {
+  color: #3F1626;
+  font-size: 2.5rem;
+  margin-bottom: 6rem;
+  font-weight: 600;
+}
+
+.customer-container .display-4 {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.customer-container p {
+  font-size: 1rem;
+}
+
+.customer-container .custom-icons {
+  height: 70px;
+}
+
+
+@media (max-width: 992px) {
+  .customer-container {
+    padding: 30px 0px; /* Adjust padding for smaller devices */
+   
   }
 
-  .customer-container .custom-icons{
-    height: 70px;
+  .customer-container .head-h1 {
+    font-size: 1.8rem; /* Adjust heading font size */
+    margin-bottom: 3rem; /* Adjust margin bottom */
   }
-  
+
+  .customer-container .display-4 {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  .customer-container .custom-icons {
+    height: 50px; /* Adjust icon height */
+  }
+
+  .customer-container p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 576px) {
+  .customer-container {
+    padding: 30px 0px; /* Adjust padding for smaller devices */
+   
+  }
+
+  .customer-container .head-h1 {
+    font-size: 1.8rem; /* Adjust heading font size */
+    margin-bottom: 3rem; /* Adjust margin bottom */
+  }
+
+  .customer-container .display-4 {
+    font-size: 2.5rem; /* Adjust font size */
+  }
+
+  .customer-container .custom-icons {
+    height: 50px; /* Adjust icon height */
+  }
+
+  .customer-container p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}

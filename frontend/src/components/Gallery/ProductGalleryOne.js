@@ -9,9 +9,27 @@ import FooterHero from '../../components/Footer/footerHero';
 
 const galleryImages = [
 
-  "/images/gallery/FootScrubbers/52-min.jpg",
-  "/images/gallery/FootScrubbers/53-min.jpg",
-  "/images/gallery/FootScrubbers/54-min.jpg",
+  "/images/gallery/BarberScissors/3-min.jpg",
+  "/images/gallery/BarberScissors/4-min.jpg",
+  "/images/gallery/BarberScissors/5-min.jpg",
+  "/images/gallery/BarberScissors/6-min.jpg",
+  "/images/gallery/BarberScissors/7-min.jpg",
+  "/images/gallery/BarberScissors/8-min.jpg",
+  "/images/gallery/BarberScissors/9-min.jpg",
+  "/images/gallery/BarberScissors/10-min.jpg",
+  "/images/gallery/BarberScissors/11-min.jpg",
+  "/images/gallery/BarberScissors/12-min.jpg",
+  "/images/gallery/BarberScissors/13-min.jpg",
+  "/images/gallery/BarberScissors/14-min.jpg",
+  "/images/gallery/BarberScissors/15-min.jpg",
+  "/images/gallery/BarberScissors/16-min.jpg",
+  "/images/gallery/BarberScissors/17-min.jpg",
+  "/images/gallery/BarberScissors/18-min.jpg",
+  "/images/gallery/BarberScissors/19-min.jpg",
+  "/images/gallery/BarberScissors/20-min.jpg",
+  "/images/gallery/BarberScissors/21-min.jpg",
+  "/images/gallery/BarberScissors/22-min.jpg",
+  "/images/gallery/BarberScissors/23-min.jpg",
   
  
   
@@ -63,13 +81,13 @@ const ProductGalleryOne = () => {
       <div className="gallery">
       <div className='d-flex flex-column flex-lg-row '>
         <div className="gallery-item ">
-          <img src="/images/gallery/FootScrubbers/50-min.jpg" alt="Img 2" className="gallery-image2" onClick={()=> {
-                setShow(true) ; SetImg("/images/gallery/FootScrubbers/50-min.jpg")
+          <img src="/images/gallery/BarberScissors/1-min.png" alt="Img 2" className="gallery-image2" onClick={()=> {
+                setShow(true) ; SetImg("/images/gallery/BarberScissors/1-min.png")
               }} />
         </div>
         <div className="gallery-item">
-          <img src="/images/gallery/FootScrubbers/51-min.jpg" alt="Img 1" className="gallery-image1" onClick={()=> {
-                setShow(true) ; SetImg("/images/gallery/FootScrubbers/51-min.jpg")
+          <img src="/images/gallery/BarberScissors/2-min.png" alt="Img 1" className="gallery-image1" onClick={()=> {
+                setShow(true) ; SetImg("/images/gallery/BarberScissors/2-min.png")
               }} />
         </div>
         </div>

@@ -9,8 +9,15 @@ import FooterHero from '../../components/Footer/footerHero';
 
 const galleryImages = [
 
-  "/images/gallery/NailCareTools/45-min.jpg",
-  "/images/gallery/NailCareTools/46-min.jpg",
+  "/images/gallery/EyebrowTweezers/4-min.jpg",
+  "/images/gallery/EyebrowTweezers/5-min.jpg",
+  "/images/gallery/EyebrowTweezers/6-min.jpg",
+  "/images/gallery/EyebrowTweezers/7-min.jpg",
+  "/images/gallery/EyebrowTweezers/8-min.jpg",
+  "/images/gallery/EyebrowTweezers/9-min.jpg",
+  "/images/gallery/EyebrowTweezers/10-min.jpg",
+  "/images/gallery/EyebrowTweezers/11-min.jpg",
+  "/images/gallery/EyebrowTweezers/12-min.jpg",
   
   
  
@@ -64,13 +71,13 @@ const ProductGalleryTwo = () => {
       <div className="gallery">
       <div className='d-flex flex-column flex-lg-row '>
         <div className="gallery-item ">
-          <img src="/images/gallery/NailCareTools/41-min.jpg" alt="Img 2" className="gallery-image2" onClick={()=> {
-                setShow(true) ; SetImg("/gallery/NailCareTools/41-min.jpg")
+          <img src="/images/gallery/EyebrowTweezers/1-min.png" alt="Img 2" className="gallery-image2" onClick={()=> {
+                setShow(true) ; SetImg("/images/gallery/EyebrowTweezers/2-min.png")
               }} />
         </div>
         <div className="gallery-item">
-          <img src="/images/gallery/NailCareTools/42-min.jpg" alt="Img 1" className="gallery-image1" onClick={()=> {
-                setShow(true) ; SetImg("/images/gallery/NailCareTools/42-min.jpg")
+          <img src="/images/gallery/EyebrowTweezers/1-min.png" alt="Img 1" className="gallery-image1" onClick={()=> {
+                setShow(true) ; SetImg("//images/gallery/EyebrowTweezers/2-min.png")
               }} />
         </div>
         </div>

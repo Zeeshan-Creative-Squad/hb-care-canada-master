@@ -1,52 +1,88 @@
 import React, { useState } from 'react';
 import "./ProductHero.css";
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ProductHero = () => {
     const [activeButton, setActiveButton] = useState(1);
     const navigate = useNavigate();
 
-    const handleButtonClick = (buttonNumber) => {
+    const handleButtonClick = (buttonNumber, path) => {
         setActiveButton(buttonNumber);
-      };
+        navigate(path);
+    };
 
-      
-  return (
-    <div className="product-hero">
-      <div className="overlay">
-        <div className="hero-content text-center">
-          <h1>Product Gallery</h1>
-          <p>Browse through our collection of premium grooming essentials, handpicked to meet the diverse needs of barbers across Canada. Get inspired and find the perfect tools to elevate your craft.</p>
-          <div className="button-container">
-  <a onClick={() => {navigate("/product")}}>
-    <button
-      className={`product-button ${activeButton === 1 ? 'active' : ''}`}
-      onClick={() => handleButtonClick(1)}
-    >
-     Scissors
-    </button>
-  </a>
-  <a onClick={() => {navigate("/product-gallery-one")}}>
-    <button
-      className={`product-button ${activeButton === 2 ? 'active' : ''}`}
-      onClick={() => handleButtonClick(2)}
-    >
-     Foot Scrubber
-    </button>
-  </a>
-  <a onClick={() => {navigate("/product-gallery-two")}}>
-    <button
-      className={`product-button ${activeButton === 3 ? 'active' : ''}`}
-      onClick={() => handleButtonClick(3)}
-    >
-     Nail Care Tools
-    </button>
-  </a>
-</div>
+    return (
+        <div className="product-hero">
+            <div className="overlay">
+                <div className="hero-content text-center">
+                    <h1>Product Gallery</h1>
+                    <p>Browse through our collection of premium grooming essentials, handpicked to meet the diverse needs of barbers across Canada. Get inspired and find the perfect tools to elevate your craft.</p>
+                    <div className="button-container">
+                        <button
+                            className={`product-button ${activeButton === 1 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(1, "/barber-razors")}
+                        >
+                            Barber Razors
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 2 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(2, "/barber-scissors")}
+                        >
+                            Barber Scissors
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 3 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(3, "/eyebrow-tweezers")}
+                        >
+                            Eyebrow Tweezers
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 4 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(4, "/eyelash-tweezers")}
+                        >
+                            Eyelash Tweezers
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 5 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(5, "/nailcutting")}
+                        >
+                            NailCutting
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 6 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(6, "/nailcutting-scissor")}
+                        >
+                            NailCutting Scissor
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 7 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(7, "/nipper")}
+                        >
+                            Nippers
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 8 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(8, "/pushers")}
+                        >
+                            Pushers
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 9 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(9, "/medical-tools")}
+                        >
+                            Medical Tools
+                        </button>
+                        <button
+                            className={`product-button ${activeButton === 10 ? 'active' : ''}`}
+                            onClick={() => handleButtonClick(10, "/pedicure-footfilers")}
+                        >
+                            Pedicure FootFilers
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  )
+    );
 }
 
-export default ProductHero
+export default ProductHero;

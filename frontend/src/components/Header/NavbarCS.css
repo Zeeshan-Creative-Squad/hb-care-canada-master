@@ -121,6 +121,139 @@
     justify-content: center;
 }
 
+/* Dropdown css */
+
+.navigation-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-trigger {
+    text-decoration: none;
+    color: #1F2F54;
+    font-size: 17px;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    transition: 0.1s ease;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .dropdown-trigger:hover {
+    color: #3F1626;
+  }
+   
+  
+  
+  .dropdown-content {
+    position: relative;
+    top: 100%;
+    left: -37%;
+    background-color: white;
+    min-width: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  
+  .dropdown-content .nav-links {
+    color: black !important;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    
+  }
+  
+  .dropdown-content .nav-links:hover {
+    color: #3F1626 !important;
+  }
+  
+  
+  
+  .dropdown-content-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  
+  
+  .dropdown-content-enter-active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .dropdown-content-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .dropdown-content-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .header .arrow-icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+  }
+  
+  .header .rotate-icon {
+    animation: rotate180 .3s forwards;
+  }
+  
+  .dropdown-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .dropdown-item .flexxbox{
+    width: 2vh;
+  }
+
+
+  .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    /* background-color: #f1f1f1; */
+    color: #CB1212;
+  }
+  
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .header .itemsof-dropdown{
+    
+    line-height: 1;
+    display: inline;
+  }
+
 
 @media (max-width: 1200px) {
     .megamenu_cs1 {
