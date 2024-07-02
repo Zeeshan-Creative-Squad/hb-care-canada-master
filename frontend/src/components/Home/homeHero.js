@@ -1,15 +1,15 @@
 import React from "react";
 import "./homeHero.css";
-import { Navigate, useNavigate } from 'react-router-dom';
+// import { Navigate, useNavigate } from 'react-router-dom';
 
 
-const HomeHero = () => {
-  const navigate = useNavigate();
+const homeHero = () => {
+  // const navigate = useNavigate();
 
-  const handleClick = (path) => {
-    navigate(path);
-    window.scrollTo(0, 0);
-};
+//   const handleClick = (path) => {
+//     navigate(path);
+//     window.scrollTo(0, 0);
+// };
   return (
     <>
       <div className="home-hero">
@@ -17,7 +17,7 @@ const HomeHero = () => {
         <div className="Homehero-content text-center">
           <h1>Welcome to HB Care  <br/> Your Source for Barbering Excellence!</h1>
           <p>Premium grooming essentials and unparalleled support, customized to elevate your craft and delight your clients. Join the HB Care family today and take your barbering game to new heights!</p>
-          <a onClick={() => handleClick("/contact")}> <button className="connect-button">Let's Connect</button></a>
+          <a href="/contact"> <button className="connect-button">Let's Connect</button></a>
         </div>
       </div>
     </div>
@@ -83,4 +83,4 @@ const HomeHero = () => {
   );
 };
 
-export default HomeHero;
+export default homeHero;

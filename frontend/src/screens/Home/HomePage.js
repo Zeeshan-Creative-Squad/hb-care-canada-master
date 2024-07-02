@@ -7,7 +7,8 @@ import Articles from '../../components/NewsAndArticles/Articles';
 import Testimonials from '../../components/OurTestimonials/Testimonials';
 import OurServices from '../../components/OurServices/ourServices'
 import ContactForm from '../../components/ContactForm/ContactForm'
-import HomeHero from '../../components/Home/HomeHero';
+import HomeHero from '../../components/Home/homeHero'
+
 
 const HomePage = () => {
   return (
