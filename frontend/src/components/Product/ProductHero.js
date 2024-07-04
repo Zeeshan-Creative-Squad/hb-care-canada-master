@@ -12,7 +12,8 @@ const ProductHero = ({currentNum}) => {
     };
 
     return (
-        <div className="product-hero">
+        <div className='product-hero'>
+        <div className="container">
             <div className="overlay">
                 <div className="hero-content text-center">
                     <h1>Product Gallery</h1>
@@ -48,6 +49,9 @@ const ProductHero = ({currentNum}) => {
                         >
                             NailCutting
                         </button>
+                        </div>
+                        <br/>
+                        <div className="button-container">
                         <button
                             className={`product-button ${activeButton === 6 ? 'active' : ''}`}
                             onClick={() => handleButtonClick(6, "/nailcutting-scissor")}
@@ -72,6 +76,7 @@ const ProductHero = ({currentNum}) => {
                         >
                             Medical Tools
                         </button>
+                        
                         <button
                             className={`product-button ${activeButton === 10 ? 'active' : ''}`}
                             onClick={() => handleButtonClick(10, "/pedicure-footfilers")}
@@ -79,8 +84,10 @@ const ProductHero = ({currentNum}) => {
                             Pedicure FootFilers
                         </button>
                     </div>
+                   
                 </div>
             </div>
+        </div>
         </div>
     );
 }
