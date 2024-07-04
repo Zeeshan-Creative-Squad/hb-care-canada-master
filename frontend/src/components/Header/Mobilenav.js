@@ -186,7 +186,7 @@ const Mobilenav = (props) => {
           </div>
           <div className={`d-flex justify-content-between align-content center navitems_cs1 ${props.landingPage && 'd-none'}`}>
             <li>
-            <Link onClick={() => props.hamburgerdropdown(transfer)} to="/product"> Product </Link>
+            <Link onClick={() => props.hamburgerdropdown(transfer)} to="/barber-razors"> Product </Link>
             </li>
           </div>
           <div>

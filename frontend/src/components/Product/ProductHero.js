@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import "./ProductHero.css";
 import { useNavigate } from 'react-router-dom';
 
-const ProductHero = () => {
-    const [activeButton, setActiveButton] = useState(1);
+const ProductHero = ({currentNum}) => {
+    const [activeButton, setActiveButton] = useState(currentNum);
     const navigate = useNavigate();
 
     const handleButtonClick = (buttonNumber, path) => {
-        setActiveButton(buttonNumber);
+        // setActiveButton(buttonNumber);
         navigate(path);
     };
 
