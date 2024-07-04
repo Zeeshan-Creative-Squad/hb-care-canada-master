@@ -55,7 +55,7 @@ const ProductGalleryFive = () => {
   return (
     <>
       <NavbarCS />
-      <ProductHero />
+      <ProductHero currentNum={6}/>
 
       <div className='gallery-container'>
         <div className="container">
