@@ -27,6 +27,7 @@
 /* Card styling */
 .team-container .card {
   background-color: transparent;
+ 
 }
 
 .card-text {
@@ -35,6 +36,11 @@
 
 .card-title {
   color: #D3C6B8;
+
+}
+
+.team-container .card-img-top{
+  border-radius: 10px;
 }
 
 /* Media queries for responsiveness */

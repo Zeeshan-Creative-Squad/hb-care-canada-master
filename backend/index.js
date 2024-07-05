@@ -54,6 +54,7 @@ app.post("/send-appointment", (req, res, next) => {
   let message = req.body.message;
   let appointment = req.body.appointmentType;
   let date = req.body.date;
+  console.log("Received Request", name)
   let content = `Form-type: ${formType} \n Appointment type: ${appointment} \n date: ${date} \n name: ${name} \n email: ${email} \n phone number: ${phone} \n message: ${message}`;
 
   let mail = {
@@ -87,7 +88,7 @@ app.post("/send-contact-form-main", (req, res, next) => {
 
   let mail = {
     from: name,
-    to: process.env.USER,
+    to: [process.env.USER, process.env.USER1, process.env.USER2],
     subject: "New Message From HB-Care",
     text: content,
     replyTo:email
