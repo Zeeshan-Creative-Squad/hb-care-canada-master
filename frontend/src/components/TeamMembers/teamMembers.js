@@ -2,9 +2,9 @@ import React from 'react';
 import './TeamMembers.css';
 
 const teamMembers = [
-  { name: 'JOHNATHAN DOE', title: 'CHIEF EXECUTIVE OFFICER', imgSrc: '/images/team1.png' },
-  { name: 'JOHNATHAN DOE', title: 'CHIEF EXECUTIVE OFFICER', imgSrc: '/images/team2.png' },
-  { name: 'JOHNATHAN DOE', title: 'CHIEF EXECUTIVE OFFICER', imgSrc: '/images/team3.png' },
+  { name: 'JOHNATHAN DOE', title: 'CHIEF EXECUTIVE OFFICER', imgSrc: '/images/Fakhra-Atiq.jpg' },
+  { name: 'JOHNATHAN DOE', title: 'CHIEF EXECUTIVE OFFICER', imgSrc: '/images/Tahir-Nadeem.jpg' },
+  { name: 'JOHNATHAN DOE', title: 'CHIEF EXECUTIVE OFFICER', imgSrc: '/images/Umer-Razzaq.jpg' },
   // { name: 'JOHNATHAN DOE', title: 'CHIEF EXECUTIVE OFFICER', imgSrc: '/images/team4.png' }
 ];
 
