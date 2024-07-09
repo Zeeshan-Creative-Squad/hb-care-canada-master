@@ -29,7 +29,7 @@ app.use("/", blogRoutes);
 app.use('/api/locationpages', locationRouter);
   
 let transport = {
-  service: "gmail",
+  service: "hotmail",
   auth: {
     user: process.env.USER,
     pass: process.env.PASS,
