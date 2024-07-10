@@ -7,27 +7,27 @@ import ContactForm from '../../components/ContactForm/ContactForm'
 import FooterHero from '../../components/Footer/footerHero';
 
 const galleryImages = [
-  "/images/gallery/BarberScissors/3-min.jpg",
-  "/images/gallery/BarberScissors/4-min.jpg",
-  "/images/gallery/BarberScissors/5-min.jpg",
-  "/images/gallery/BarberScissors/6-min.jpg",
-  "/images/gallery/BarberScissors/7-min.jpg",
-  "/images/gallery/BarberScissors/8-min.jpg",
-  "/images/gallery/BarberScissors/9-min.jpg",
-  "/images/gallery/BarberScissors/10-min.jpg",
-  "/images/gallery/BarberScissors/11-min.jpg",
-  "/images/gallery/BarberScissors/12-min.jpg",
-  "/images/gallery/BarberScissors/13-min.jpg",
-  "/images/gallery/BarberScissors/14-min.jpg",
-  "/images/gallery/BarberScissors/15-min.jpg",
-  "/images/gallery/BarberScissors/16-min.jpg",
-  "/images/gallery/BarberScissors/17-min.jpg",
-  "/images/gallery/BarberScissors/18-min.jpg",
-  "/images/gallery/BarberScissors/19-min.jpg",
-  "/images/gallery/BarberScissors/20-min.jpg",
-  "/images/gallery/BarberScissors/21-min.jpg",
-  "/images/gallery/BarberScissors/22-min.jpg",
-  "/images/gallery/BarberScissors/23-min.jpg",
+   "/images/gallery/BarberScissors/3-min-min.jpg",
+   "/images/gallery/BarberScissors/4-min-min.jpg",
+   "/images/gallery/BarberScissors/5-min-min.jpg",
+   "/images/gallery/BarberScissors/6-min-min.jpg",
+   "/images/gallery/BarberScissors/7-min-min.jpg",
+   "/images/gallery/BarberScissors/8-min-min.jpg",
+   "/images/gallery/BarberScissors/9-min-min.jpg",
+  "/images/gallery/BarberScissors/10-min-min.jpg",
+  "/images/gallery/BarberScissors/11-min-min.jpg",
+  "/images/gallery/BarberScissors/12-min-min.jpg",
+  "/images/gallery/BarberScissors/13-min-min.jpg",
+  "/images/gallery/BarberScissors/14-min-min.jpg",
+  "/images/gallery/BarberScissors/15-min-min.jpg",
+  "/images/gallery/BarberScissors/16-min-min.jpg",
+  "/images/gallery/BarberScissors/17-min-min.jpg",
+  "/images/gallery/BarberScissors/18-min-min.jpg",
+  "/images/gallery/BarberScissors/19-min-min.jpg",
+  "/images/gallery/BarberScissors/20-min-min.jpg",
+  "/images/gallery/BarberScissors/21-min-min.jpg",
+  "/images/gallery/BarberScissors/22-min-min.jpg",
+  "/images/gallery/BarberScissors/23-min-min.jpg",
 ];
 
 const ProductGalleryOne = () => {
@@ -75,13 +75,13 @@ const ProductGalleryOne = () => {
             <div className="gallery">
               <div className='d-flex flex-column flex-lg-row '>
                 <div className="gallery-item ">
-                  <img src="/images/gallery/BarberScissors/1-min.png" alt="Img 2" className="gallery-image2" onClick={() => {
-                    setShow(true); SetImg("/images/gallery/BarberScissors/1-min.png")
+                  <img src="/images/gallery/BarberScissors/1-min-min.png" alt="Img 2" className="gallery-image2" onClick={() => {
+                    setShow(true); SetImg("/images/gallery/BarberScissors/1-min-min.png")
                   }} />
                 </div>
                 <div className="gallery-item">
-                  <img src="/images/gallery/BarberScissors/2-min.png" alt="Img 1" className="gallery-image1" onClick={() => {
-                    setShow(true); SetImg("/images/gallery/BarberScissors/2-min.png")
+                  <img src="/images/gallery/BarberScissors/2-min-min.png" alt="Img 1" className="gallery-image1" onClick={() => {
+                    setShow(true); SetImg("/images/gallery/BarberScissors/2-min-min.png")
                   }} />
                 </div>
               </div>

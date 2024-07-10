@@ -59,7 +59,7 @@ const ProductGalleryFour = () => {
               <div className='d-flex flex-column flex-lg-row '>
                 <div className="gallery-item ">
                   <img src="/images/gallery/ManicurePedicureNailCutters/1-min.png" alt="Img 2" className="gallery-image2" onClick={() => {
-                    setShow(true); SetImg("/images/gallery/ManicurePedicureNailCutters/11-min.png")
+                    setShow(true); SetImg("/images/gallery/ManicurePedicureNailCutters/1-min.png")
                   }} />
                 </div>
                 <div className="gallery-item">

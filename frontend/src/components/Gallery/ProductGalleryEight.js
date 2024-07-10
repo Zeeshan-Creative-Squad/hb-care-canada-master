@@ -7,6 +7,7 @@ import ContactForm from '../../components/ContactForm/ContactForm'
 import FooterHero from '../../components/Footer/footerHero';
 
 const galleryImages = [
+  "/images/gallery/MedicalInstruments/3-min.jpg",
   "/images/gallery/MedicalInstruments/4-min.jpg",
   "/images/gallery/MedicalInstruments/5-min.jpg",
   "/images/gallery/MedicalInstruments/6-min.jpg",
@@ -65,7 +66,7 @@ const ProductGalleryEight = () => {
               <div className='d-flex flex-column flex-lg-row '>
                 <div className="gallery-item ">
                   <img src="/images/gallery/MedicalInstruments/1-min.png" alt="Img 2" className="gallery-image2" onClick={() => {
-                    setShow(true); SetImg("/images/gallery/MedicalInstruments/11-min.png")
+                    setShow(true); SetImg("/images/gallery/MedicalInstruments/1-min.png")
                   }} />
                 </div>
                 <div className="gallery-item">
