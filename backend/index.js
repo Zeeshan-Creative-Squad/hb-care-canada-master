@@ -29,7 +29,15 @@ app.use("/", blogRoutes);
 app.use('/api/locationpages', locationRouter);
   
 let transport = {
-  service: "hotmail",
+  host: "smtpout.secureserver.net",  
+  secure: true,
+  secureConnection: false,
+  tls: {
+      ciphers:'SSLv3'
+  },
+  requireTLS:true,
+  port: 465,
+  debug: true,
   auth: {
     user: process.env.USER,
     pass: process.env.PASS,
@@ -88,7 +96,7 @@ app.post("/send-contact-form-main", (req, res, next) => {
 
   let mail = {
     from: name,
-    to: [process.env.USER, process.env.USER1, process.env.USER2],
+    to: [process.env.USER],
     subject: "New Message From HB-Care",
     text: content,
     replyTo:email
