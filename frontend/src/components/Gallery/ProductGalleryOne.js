@@ -7,7 +7,6 @@ import ContactForm from '../../components/ContactForm/ContactForm'
 import FooterHero from '../../components/Footer/footerHero';
 
 const galleryImages = [
-   "/images/gallery/BarberScissors/3-min-min.jpg",
    "/images/gallery/BarberScissors/4-min-min.jpg",
    "/images/gallery/BarberScissors/5-min-min.jpg",
    "/images/gallery/BarberScissors/6-min-min.jpg",
