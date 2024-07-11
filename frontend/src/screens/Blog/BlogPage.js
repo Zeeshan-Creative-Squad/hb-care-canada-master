@@ -13,12 +13,9 @@ const BlogPage = () => {
         <BlogHero />
         <BlogMain />
         <Articles backgroundColor="#F9F9F9" />
-
         <FooterHero />
-       
-        
     </div>
   )
 }
 
-export default BlogPage
+export default BlogPage;

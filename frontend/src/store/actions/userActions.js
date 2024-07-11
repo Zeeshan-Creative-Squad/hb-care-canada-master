@@ -1,60 +1,38 @@
-import Settings from "../../components/CommonAPICalls/Settings";
-import SystemApiCallSettings from "../../components/CommonAPICalls/SystemApiCallSettings";
+import axios from 'axios'
 
-const handleLoginSuccess = (dispatch, loginResponseData=[], userResponseData=[], moduleResponseData=[]) => {
-  const payload = {
-    user_type_id: loginResponseData.user_type_id,
-    user_id: loginResponseData.user_id,
-    token: loginResponseData.token,
-    email: loginResponseData.email,
-    usersList: userResponseData ? userResponseData?.data : [],
-    modulesList: moduleResponseData ? moduleResponseData?.data : []
-  };
+export const login = (userLogin)=>{ return async(dispatch) => {
 
-  dispatch({
-    type: "USER_LOGIN_SUCCESS",
-    payload,
-  });
-
-  localStorage.setItem("userInfo", JSON.stringify(payload));
-};
-
-export const login = (userLogin) => {
-  return async (dispatch) => {
     try {
-      dispatch({
-        type: "USER_LOGIN_REQUEST",
-      });
+        dispatch({
+            type: 'USER_LOGIN_REQUEST'
+        })
+        const config={
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+        const {data}= await axios.post('/api/users/login', userLogin, config)
 
-      const loginResponseData = await SystemApiCallSettings('POST', Settings.apiBaseUrl + '/login', {}, true, userLogin);
+        dispatch({
+            type: 'USER_LOGIN_SUCCESS',
+            payload:data
+        })
 
-      if (loginResponseData.user_id === 3) {
-        const moduleResponseData = await SystemApiCallSettings('GET', Settings.apiBaseUrl+'/get_api_document');
-        const userResponseData = await SystemApiCallSettings('GET', Settings.apiBaseUrl + '/', {
-          user_type_id: loginResponseData.user_type_id,
-          user_id: loginResponseData.user_id,
-          token: loginResponseData.token,
-        });
-
-        handleLoginSuccess(dispatch, loginResponseData, userResponseData, moduleResponseData);
-      } else {
-        handleLoginSuccess(dispatch, loginResponseData);
-      }
+        localStorage.setItem('userInfo', JSON.stringify(data) )
     } catch (error) {
-      dispatch({
-        type: "USER_LOGIN_FAIL",
-        payload: error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
-      });
+        dispatch({type: 'USER_LOGIN_FAIL',
+        payload: error.response && error.response.data.message ? error.response.data.message : error.message})
     }
-  };
-};
 
-export const logout = () => {
-  return (dispatch) => {
-    localStorage.removeItem("userInfo");
-    dispatch({ type: "USER_LOGOUT" });
-    dispatch({ type: "USER_DETAILS_RESET" });
-  };
-}; 
+}}
+
+export const logout = ()=>{ return (dispatch) => {
+
+    localStorage.removeItem('userInfo')
+    localStorage.removeItem('googleUserData')
+    dispatch({type: 'USER_LOGOUT' })
+    dispatch({type: 'USER_DETAILS_RESET'})
+    dispatch({type: 'MY_ORDER_LIST_RESET'})
+    dispatch({type: 'USER_LIST_RESET'})
+
+}}

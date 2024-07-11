@@ -24,6 +24,11 @@ import ProductGallerySeven from "./components/Gallery/ProductGallerySeven";
 import ProductGalleryEight from "./components/Gallery/ProductGalleryEight";
 import ProductGalleryNine from "./components/Gallery/ProductGalleryNine";
 
+import LoginScreen from "./AdminScreens/LoginScreen";
+import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
+import AdminScreen from "./AdminScreens/AdminScreen";
+import LocationScreen from './screens/LocationScreens/LocationScreen';
+import LocationPages from "./components/LocationPages_/LocationPages"
    
 const App = () => { 
   return (
@@ -46,10 +51,16 @@ const App = () => {
       <Route path='/medical-tools' element={<ProductGalleryEight />} />
       <Route path='/pedicure-footfilers' element={<ProductGalleryNine />} />
       <Route path='/news' element={<NewsUpdatesPage />} />
-      <Route path='/blogs' element={<BlogPage />} />
+      <Route path='/blog' element={<BlogPage />} />
       <Route path='/contact' element={<ContactPageMain />} />
-      </Routes>
 
+      <Route path="/admin" element={<AdminScreen />} />
+        <Route path="/admin/blogs" element={<BlogsScreen />} />
+        <Route path='/location/:slug' element={<LocationPages />} />
+        <Route path='/admin/location-pages' element={<LocationScreen />}/>
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/blogs/:id" element={<BlogPage />} />
+      </Routes>
     </Router>
     
   );

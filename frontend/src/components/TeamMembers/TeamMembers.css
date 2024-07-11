@@ -24,17 +24,16 @@
   color: #D3C6B8;
 }
 
-/* Card styling */
 .team-container .card {
   background-color: transparent;
  
 }
 
-.card-text {
+.team-container .card-text {
   color: #FFFFFF;
 }
 
-.card-title {
+.team-container .card-title {
   color: #D3C6B8;
 
 }
@@ -43,9 +42,6 @@
   border-radius: 10px;
 }
 
-/* Media queries for responsiveness */
-
-/* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
   .maindiv {
       padding: 5vh 1vh;

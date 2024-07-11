@@ -22,7 +22,7 @@ const AboutPage = () => {
   return (
     <div>
         <NavbarCS />
-        <AboutHero />
+        <AboutHero content="About HB Care Canada" paragragh="Discover our commitment to raising grooming standards through premium products and unparalleled support for barbers across North America."/>
         <AboutUs />
         <TeamMembers />
         <WhatWeDo />
