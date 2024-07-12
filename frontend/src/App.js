@@ -29,11 +29,14 @@ import BlogsScreen from "./AdminScreens/BlogsScreens/BlogsScreen";
 import AdminScreen from "./AdminScreens/AdminScreen";
 import LocationScreen from './screens/LocationScreens/LocationScreen';
 import LocationPages from "./components/LocationPages_/LocationPages"
+import ScrollToTop from "./ScrollToTop"
    
 const App = () => { 
   return (
 
     <Router>
+      
+    <ScrollToTop/>
 
       <Routes>
       <Route path='/' element={<HomePage />} />
@@ -51,7 +54,6 @@ const App = () => {
       <Route path='/medical-tools' element={<ProductGalleryEight />} />
       <Route path='/pedicure-footfilers' element={<ProductGalleryNine />} />
       <Route path='/news' element={<NewsUpdatesPage />} />
-      <Route path='/blog' element={<BlogPage />} />
       <Route path='/contact' element={<ContactPageMain />} />
 
       <Route path="/admin" element={<AdminScreen />} />

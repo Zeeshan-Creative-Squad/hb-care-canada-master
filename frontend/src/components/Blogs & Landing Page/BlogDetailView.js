@@ -7,7 +7,7 @@ const BlogDetailView = ({blog}) => {
         <div className='inner_blogs_img'>
             <div className='blog_detail_cn mb-5'>
                 <div className='container text-center'>
-                    <img style={{borderRadius:"8px"}} className='img-fluid blog_main_creative' src={blog.blog_image} />
+                    <img style={{borderRadius:"8px"}} className='img-fluid blog_main_creative' src={blog.blog_image} alt='thumbnail' />
                     <div className='blog_short_detail'>
                         {/* Listen To Blog Feature */}
                     </div>

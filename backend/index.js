@@ -44,6 +44,7 @@ let transport = {
   },
 };
 
+
 let transporter = nodemailer.createTransport(transport);
 
 transporter.verify((error, success) => {

@@ -163,7 +163,7 @@ const BlogsListings = () => {
                                         <div key={item.category} className={`tab-pane fade blog_detailed mb-5 ${activeTab === item.category || activeTab === 12 ? 'show active' : ''}`} id={item.category} role="tabpanel">
                                             <h1 className='heading_main mb-4'>{item.main_heading}</h1>
                                             <div className='entity-details mb-4 d-flex justify-content-start align-items-center'>
-                                                <img src={item.logo} className='img-fluid' />
+                                                <img src={item.logo} className='img-fluid' alt='icon'/>
                                                 <div className='entity ms-3'>
                                                     <h4 className='h4_main'>{item.entity}</h4>
                                                     <div className='date_extra_info d-flex justify-content-start align-items-center'>
@@ -172,7 +172,7 @@ const BlogsListings = () => {
                                                     </div> 
                                                 </div>
                                             </div>
-                                            <img src={item.blog_creative} className='img-fluid main-crt' />
+                                            <img src={item.blog_creative} className='img-fluid main-crt' alt='icon'/>
                                             <p className='para_main text-start mt-4'>{item.paragraph}</p>
                                             <h4 onClick={() => redirectUserToBlog(item.slug_url)} className='underline_txt mt-2'>CONTINUE READING</h4>
                                         </div>
@@ -190,7 +190,7 @@ const BlogsListings = () => {
                                             {recentBlogs.map((item) => {
                                                 return (
                                                     <div onClick={() => redirectUserToBlog(item.slug_url)} className='detail_recents mb-3 d-flex justify-content-start align-items-center'>
-                                                        <img src={item.logo} className='img-fluid' />
+                                                        <img src={item.logo} className='img-fluid' alt='logo'/>
                                                         <div className='detail_recents_desc ms-3'>
                                                             <h4 className='h4_main'>{item.blog_description}</h4>
                                                             <h4 className='h4_main_dt'>{item.date}</h4>

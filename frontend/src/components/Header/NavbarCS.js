@@ -141,9 +141,9 @@ const NavbarCS = ({ noLinearBackground, landingPage=false, noLinearBackgroundVid
       <div className="dropdown-trigger d-flex align-items-center"
            onMouseEnter={() => handleMouseEnter('notes')}
            onMouseLeave={handleMouseLeave}>
-        <span className="nav-links font-play">Products</span>
+        <NavLink className="nav-links font-play" to={"/barber-razors"}>Products</NavLink>
       </div>
-      <div className={`dropdown-content ${hoveredItem === 'notes' ? 'open' : 'd-none'}`}
+      <div className={`dropdown-content  ${hoveredItem === 'notes' ? 'open' : 'd-none'}`}
            onMouseEnter={() => handleMouseEnter('notes')}
            onMouseLeave={handleMouseLeave}>
         <div className="d-flex align-item-center gap-5">

@@ -104,7 +104,7 @@ const LocationListings = () => {
                                 <div className='entity_details mb-2 d-flex justify-content-start align-items-center'>
                                     <img className='img-fluid' src={"/favicon.png"} alt='favicon'/>
                                     <div className='entity_dates'>
-                                        <h5>Venus</h5> 
+                                        <h5>HB care</h5> 
                                         <p className='para_main'>Current URL: {element.slug_url}</p>
                                     </div> 
                                 </div>
