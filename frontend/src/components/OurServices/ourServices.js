@@ -7,7 +7,7 @@ const ourServices = () => {
             <div className='container'>
           <div className="row">
             <div className="col-lg-6 right-section">
-              <img src="/images/Group-2132.png" alt="Large Image" className='large-img'/>  
+              <img src="/images/home-our-portfolio-side-image.png" alt="Large Image" className='large-img'/>  
             </div>
             <div className="col-lg-6 left-section">
               <h2 className='secondary-h1'>OUR PORTFOLIO</h2>

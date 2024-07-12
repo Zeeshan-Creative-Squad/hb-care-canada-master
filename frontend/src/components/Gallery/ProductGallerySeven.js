@@ -7,10 +7,10 @@ import ContactForm from '../../components/ContactForm/ContactForm'
 import FooterHero from '../../components/Footer/footerHero';
 
 const galleryImages = [
-  "/images/gallery/ManicurePedicurePushers/4-min.jpg",
-  "/images/gallery/ManicurePedicurePushers/5-min.jpg",
-  "/images/gallery/ManicurePedicurePushers/6-min.jpg",
-  "/images/gallery/ManicurePedicurePushers/7-min.jpg",
+  "/images/gallery/ManicurePedicurePushers/4-min-min.jpg",
+  "/images/gallery/ManicurePedicurePushers/5-min-min.jpg",
+  "/images/gallery/ManicurePedicurePushers/6-min-min.jpg",
+  "/images/gallery/ManicurePedicurePushers/7-min-min.jpg",
 ];
 
 const ProductGallerySeven = () => {
@@ -58,13 +58,13 @@ const ProductGallerySeven = () => {
             <div className="gallery">
               <div className='d-flex flex-column flex-lg-row '>
                 <div className="gallery-item ">
-                  <img src="/images/gallery/ManicurePedicurePushers/1-min.png" alt="Img 2" className="gallery-image2" onClick={() => {
-                    setShow(true); SetImg("/images/gallery/ManicurePedicurePushers/11-min.png")
+                  <img src="/images/gallery/ManicurePedicurePushers/1-min-min.png" alt="Img 2" className="gallery-image2" onClick={() => {
+                    setShow(true); SetImg("/images/gallery/ManicurePedicurePushers/1-min-min.png")
                   }} />
                 </div>
                 <div className="gallery-item">
-                  <img src="/images/gallery/ManicurePedicurePushers/2-min.png" alt="Img 1" className="gallery-image1" onClick={() => {
-                    setShow(true); SetImg("/images/gallery/ManicurePedicurePushers/2-min.png")
+                  <img src="/images/gallery/ManicurePedicurePushers/2-min-min.png" alt="Img 1" className="gallery-image1" onClick={() => {
+                    setShow(true); SetImg("/images/gallery/ManicurePedicurePushers/2-min-min.png")
                   }} />
                 </div>
               </div>

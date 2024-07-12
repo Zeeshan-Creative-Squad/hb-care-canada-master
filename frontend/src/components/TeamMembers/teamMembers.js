@@ -2,9 +2,9 @@ import React from 'react';
 import './TeamMembers.css';
 
 const teamMembers = [
-  { name: 'Tahir Nadeem', title: 'Co-Founder & CEO', imgSrc: '/images/Tahir-Nadeem.jpg' },
-  { name: 'Umer Razzaq', title: 'Co-Founder & CEO', imgSrc: '/images/Umer-Razzaq.jpg' },
-  { name: 'Fakhra Atiq', title: 'Business development manager', imgSrc: '/images/Fakhra-Atiq.jpg' },
+  { name: 'Tahir Nadeem', title: 'Founder & CEO', imgSrc: '/images/Tahir-Nadeem.jpg' },
+  { name: 'Fakhra Atiq', title: 'Business Development Manager', imgSrc: '/images/Fakhra-Atiq.jpg' },
+  { name: 'Umer Razaq', title: 'Director', imgSrc: '/images/Umer-Razzaq.jpg' },
 
 ];
 

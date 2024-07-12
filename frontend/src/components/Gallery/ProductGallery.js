@@ -3,24 +3,24 @@ import "./ProductGallery.css";
 import Modal from '../Model/Modal';
 
 const galleryImages = [
-  "/images/gallery/BarberRazors/3-min.jpg",
-  "/images/gallery/BarberRazors/4-min.jpg",
-  "/images/gallery/BarberRazors/5-min.jpg",
-  "/images/gallery/BarberRazors/6-min.jpg",
-  "/images/gallery/BarberRazors/7-min.jpg",
-  "/images/gallery/BarberRazors/8-min.jpg",
-  "/images/gallery/BarberRazors/9-min.jpg",
-  "/images/gallery/BarberRazors/10-min.jpg",
-  "/images/gallery/BarberRazors/11-min.jpg",
-  "/images/gallery/BarberRazors/12-min.jpg",
-  "/images/gallery/BarberRazors/13-min.jpg",
-  "/images/gallery/BarberRazors/14-min.jpg",
-  "/images/gallery/BarberRazors/15-min.jpg",
-  "/images/gallery/BarberRazors/16-min.jpg",
-  "/images/gallery/BarberRazors/17-min.jpg",
-  "/images/gallery/BarberRazors/18-min.jpg",
-  "/images/gallery/BarberRazors/19-min.jpg",
-  "/images/gallery/BarberRazors/20-min.jpg"
+  "/images/gallery/BarberRazors/3-min-min.jpg",
+  "/images/gallery/BarberRazors/4-min-min.jpg",
+  "/images/gallery/BarberRazors/5-min-min.jpg",
+  "/images/gallery/BarberRazors/6-min-min.jpg",
+  "/images/gallery/BarberRazors/7-min-min.jpg",
+  "/images/gallery/BarberRazors/8-min-min.jpg",
+  "/images/gallery/BarberRazors/9-min-min.jpg",
+  "/images/gallery/BarberRazors/10-min-min.jpg",
+  "/images/gallery/BarberRazors/11-min-min.jpg",
+  "/images/gallery/BarberRazors/12-min-min.jpg",
+  "/images/gallery/BarberRazors/13-min-min.jpg",
+  "/images/gallery/BarberRazors/14-min-min.jpg",
+  "/images/gallery/BarberRazors/15-min-min.jpg",
+  "/images/gallery/BarberRazors/16-min-min.jpg",
+  "/images/gallery/BarberRazors/17-min-min.jpg",
+  "/images/gallery/BarberRazors/18-min-min.jpg",
+  "/images/gallery/BarberRazors/19-min-min.jpg",
+  "/images/gallery/BarberRazors/20-min-min.jpg"
 ];
 
 const ProductGallery = () => {
@@ -62,13 +62,13 @@ const ProductGallery = () => {
           <div className="gallery">
             <div className='d-flex flex-column flex-lg-row '>
               <div className="gallery-item ">
-                <img src="/images/gallery/BarberRazors/1-min.png" alt="Image 2" className="gallery-image2" onClick={() => {
-                  setShow(true); SetImg("/images/gallery/BarberRazors/1-min.png")
+                <img src="/images/gallery/BarberRazors/1-min-min.png" alt="Image 2" className="gallery-image2" onClick={() => {
+                  setShow(true); SetImg("/images/gallery/BarberRazors/1-min-min.png")
                 }} />
               </div>
               <div className="gallery-item">
-                <img src="/images/gallery/BarberRazors/2-min.png" alt="Image 1" className="gallery-image1" onClick={() => {
-                  setShow(true); SetImg("/images/gallery/BarberRazors/2-min.png")
+                <img src="/images/gallery/BarberRazors/2-min-min.png" alt="Image 1" className="gallery-image1" onClick={() => {
+                  setShow(true); SetImg("/images/gallery/BarberRazors/2-min-min.png")
                 }} />
               </div>
             </div>
