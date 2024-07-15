@@ -9,11 +9,7 @@ const LocationScreen = () => {
             <Helmet>
                 <meta name="robots" content="noindex" />
             </Helmet>
-            {/* <HeroBanner
-                Heading="Location Pages"
-                Paragraph={"HQNS Location Page Portal"}
-               
-            /> */}
+           
             <LocationListings />
         </Fragment>
     )

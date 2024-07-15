@@ -6,7 +6,7 @@ import 'swiper/css';
 import { Autoplay,Pagination } from "swiper/modules";
 import 'swiper/css/pagination';
 
-const Articles = ({ backgroundColor }) => {
+const Articles = ({ backgroundColor,recentBlogCard,redirectionFunction }) => {
   const [startIndex, setStartIndex] = useState(0); // State to track the index of the first visible card
 
   // Function to move to the next set of cards (right arrow)
@@ -76,18 +76,18 @@ const Articles = ({ backgroundColor }) => {
               
             }}
             >
-              {blogData.map((ele, index) => (
+              {recentBlogCard.map((blog, index) => (
                 <SwiperSlide>
                   <Col key={index} xs={12}>
               <Card className="mb-4 custom-card">
-                <Card.Img variant="top" src={ele.blogImg} className="custom-card-img"/>
+                <Card.Img variant="top" src={blog.logo} className="custom-card-img"/>
                 <Card.Body className="custom-card-body">
                   <Card.Text className="custom-card-text">
-                    {ele.Title}
+                    {blog.blog_description}
                   </Card.Text>
                   <div className="d-flex justify-content-between">
-                    <a href="#" className="readmore-btn custom-card-link">Read More →</a>
-                    <span className="text-muted">19, August, 23</span>
+                    <p className="readmore-btn custom-card-link" onClick={()=>{redirectionFunction(blog.slug_url)}}>Read More →</p>
+                    <span className="text-muted">{blog.date}</span>
                   </div>
                 </Card.Body>
               </Card>

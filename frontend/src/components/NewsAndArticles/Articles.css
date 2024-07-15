@@ -6,6 +6,7 @@
 .articles-container .readmore-btn {
   text-decoration: none;
   color: #8B8B8B;
+  cursor: pointer;
 }
 
 .articles-container .custom-card-text {

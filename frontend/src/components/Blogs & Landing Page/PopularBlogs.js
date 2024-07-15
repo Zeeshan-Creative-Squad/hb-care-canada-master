@@ -26,7 +26,7 @@ const PopularBlogs = ({popularBlogs}) => {
                         return ( 
                             <div key={`${element.id}-${index}`} className="col-lg-4 col-md-6 col-12 mb-5">
                                 <div onClick={() => redirectUserToBlog(element.slug_url)} className="blogs_card">
-                                    <img src={element.creative} className='img-fluid blg_crt' />  
+                                    <img src={element.creative} className='img-fluid blg_crt' alt='icon'/>  
                                     <div className='blogs_card_details'> 
                                         <h3>{element.heading}</h3>  
                                     </div>

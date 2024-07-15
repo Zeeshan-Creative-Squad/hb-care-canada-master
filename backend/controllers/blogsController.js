@@ -2,7 +2,6 @@ import Blog from '../models/blogModel.js';
 
 // Blogs controller
 const getBlogs = (req, res) => {
-  console.log("recived fetch req");
   Blog.find({})
   .then(blogs => {
     res.json({ message: 'Successfully retrieved blogs!', status: 'success', data: blogs });

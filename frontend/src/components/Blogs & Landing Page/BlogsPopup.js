@@ -286,7 +286,7 @@ const addParagraph = ()=>{
           <h2 className="h2_main">Blogs Upload</h2>
           <button onClick={PopupCloseHandler}>
             <span>
-              <img src="/icons/cancel.png" className="cancel-icon" />
+              <img src="/icons/cancel.png" className="cancel-icon" alt="cancel icon"/>
             </span>
           </button>
         </div>
@@ -343,7 +343,7 @@ const addParagraph = ()=>{
 
 
               <input
-              value={`<img class="img-fluid" src="${cusImg}"/>`}
+              value={`<img class="img-fluid" src="${cusImg}" alt="icon"/>`}
               onChange={()=>{}}
               className="mt-4"
               id="imageInp"

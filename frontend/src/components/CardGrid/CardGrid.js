@@ -9,6 +9,7 @@ import { Spinner } from "react-bootstrap";
 function CardGrid() {
   const itemsPerPage = 6;
   const [currentPage, setCurrentPage] = useState(1);
+  const [firstBlog,setFirstBlog] = useState();
   const [blogs, setBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
@@ -22,7 +23,10 @@ function CardGrid() {
     axios.get("/blogs")
       .then((res) => {
         if (res.data.status === "success") {
-          setBlogs(res.data.data);
+          const [firstSectionBlog , ...otherBlog] = res.data.data;
+          setFirstBlog(firstSectionBlog)
+
+          setBlogs(otherBlog);
           setLoading(false);
         }
       })
@@ -53,44 +57,61 @@ function CardGrid() {
 
   return (
     <>
-      <div><LatestNews /></div>
       {loading ?
         (<div className="w-100 text-center mb-5">
           <Spinner style={{ color: "black", width: "120px", height: "120px" }} />
         </div>) : (
-          <Container className='main-cardgrid'>
-            <Row>
-              {currentNewsData.map((blog) => (
-                <Col sm={12} md={6} lg={4} key={blog.id} className="mb-4">
-                  <Card style={{ border: 'none' }}>
-                    <Card.Img variant="top" src={blog.blog_image} />
-                    <Card.Body className='card-body'>
-                      <Card.Subtitle className="mb-2 text-muted">{blog.entity}</Card.Subtitle>
-                      <Card.Title className='card-title'>{blog.title}</Card.Title>
-                      <Card.Text>{blog.brief_paragraph}</Card.Text>
-                      <Card.Link className='href' onClick={() => redirectUserToBlog(blog.slug_url)}>Read More →</Card.Link>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              ))}
-            </Row>
-            <div className='pagination-container'>
-              {[...Array(Math.ceil(blogs.length / itemsPerPage)).keys()].map((page) => (
-                <button
-                  key={page + 1}
-                  className={currentPage === page + 1 ? 'active circle-button' : 'circle-button'}
-                  onClick={() => handlePageChange(page + 1)}
-                >
-                  {page + 1}
-                </button>
-              ))}
-              {currentPage < Math.ceil(blogs.length / itemsPerPage) && (
-                <button onClick={() => handlePageChange(currentPage + 1)}>
-                  <img src="/images/icons/next-btn-icon.svg" className="next-icon" alt="->" />
-                </button>
-              )}
+
+          <>
+          {
+            firstBlog &&
+            <div>
+              <LatestNews 
+                img={firstBlog.blog_image}
+                title={firstBlog.title}
+                content={firstBlog.brief_paragraph}
+                anchor={firstBlog.slug_url}
+                redirectionFunction={redirectUserToBlog}
+              />
             </div>
-          </Container>
+          }
+          {
+            blogs &&
+            <Container className='main-cardgrid'>
+              <Row>
+                {currentNewsData.map((blog) => (
+                  <Col sm={12} md={6} lg={4} key={blog.id} className="mb-4">
+                    <Card style={{ border: 'none' }}>
+                      <Card.Img variant="top" src={blog.blog_image} />
+                      <Card.Body className='card-body'>
+                        <Card.Subtitle className="mb-2 text-muted">{blog.entity}</Card.Subtitle>
+                        <Card.Title className='card-title'>{blog.title}</Card.Title>
+                        <Card.Text>{blog.brief_paragraph}</Card.Text>
+                        <Card.Link className='href' onClick={() => redirectUserToBlog(blog.slug_url)}>Read More →</Card.Link>
+                      </Card.Body>
+                    </Card>
+                  </Col>
+                ))}
+              </Row>
+              <div className='pagination-container'>
+                {[...Array(Math.ceil(blogs.length / itemsPerPage)).keys()].map((page) => (
+                  <button
+                    key={page + 1}
+                    className={currentPage === page + 1 ? 'active circle-button' : 'circle-button'}
+                    onClick={() => handlePageChange(page + 1)}
+                  >
+                    {page + 1}
+                  </button>
+                ))}
+                {currentPage < Math.ceil(blogs.length / itemsPerPage) && (
+                  <button onClick={() => handlePageChange(currentPage + 1)}>
+                    <img src="/images/icons/next-btn-icon.svg" className="next-icon" alt="next arrow" />
+                  </button>
+                )}
+              </div>
+            </Container>
+          }
+          </>
         )}
     </>
   );

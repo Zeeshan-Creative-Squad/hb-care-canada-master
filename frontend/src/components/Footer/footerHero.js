@@ -29,13 +29,11 @@ const footerHero = () => {
 
           <ul className='ul-segment'>
             <h2 className='head-h1'>QuickLinks</h2>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            
-      
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to={"/"}>Home</Link></li>
+            <li><Link to={"/about"}>About</Link></li>
+            <li><Link to={"/barber-razors"}>Gallery</Link></li>
+            <li><Link to={"/news"}>Blogs</Link></li>
+            <li><Link to={"/contact"}>Contact</Link></li>
 
 
           </ul>

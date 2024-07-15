@@ -110,7 +110,7 @@ const BlogsPortalListings = () => {
 
             <div className="blogs_upload">
               <button onClick={UploadBlog}>
-                <img src="/icons/plus-white.png" />
+                <img src="/icons/plus-white.png" alt="icon"/>
                 <span>Upload New Blog</span>
               </button>
             </div>
@@ -131,7 +131,7 @@ const BlogsPortalListings = () => {
                   <div className='entity_details mb-2 d-flex justify-content-start align-items-center'>
                       <img className='img-fluid' src={"/images/hbcare-logo.png"} alt='Favicon logo' />
                       <div className='entity_dates'>
-                          <h5>Creative Squad</h5>
+                          <h5>HB Care</h5>
                           <h4>{element.published_date}</h4>
                       </div> 
                   </div>
