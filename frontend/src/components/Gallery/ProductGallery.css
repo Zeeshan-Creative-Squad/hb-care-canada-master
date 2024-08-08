@@ -8,7 +8,7 @@
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 380px; 
+  height: 380px;
   background-color: white;
   background-size: cover;
 }
@@ -20,11 +20,12 @@
 .gallery-section {
   position: relative;
   /* top: -50px; Adjust the value to overlap the hero banner */
-  
-  padding-top: 50px; /* Adjust padding to compensate for the negative top value */
+
+  padding-top: 50px;
+  /* Adjust padding to compensate for the negative top value */
   display: flex;
   justify-content: center;
-  
+
 }
 
 .gallery {
@@ -34,27 +35,34 @@
 }
 
 .gallery-item {
-  margin: 10px; /* Adjust spacing between images */
+  margin: 10px;
+  /* Adjust spacing between images */
 }
 
 .gallery-image {
-  width: 100%; /* Make images responsive */
+  width: 100%;
+  /* Make images responsive */
   height: 450px;
-  border-radius: 10px; /* Optional: add border radius */
+  border-radius: 10px;
+  /* Optional: add border radius */
 }
 
 .gallery-image2 {
-  width: 100%; /* Make images responsive */
+  width: 100%;
+  /* Make images responsive */
   height: auto;
   transform: translateY(-170px);
-  border-radius: 10px; /* Optional: add border radius */
+  border-radius: 10px;
+  /* Optional: add border radius */
 }
 
 .gallery-image1 {
-  width: 100%; /* Make images responsive */
+  width: 100%;
+  /* Make images responsive */
   height: auto;
   transform: translateY(-250px);
-  border-radius: 10px; /* Optional: add border radius */
+  border-radius: 10px;
+  /* Optional: add border radius */
 }
 
 
@@ -70,31 +78,40 @@
   cursor: pointer;
 }
 
-.gallery .img-box{
-  height: 400px;
+.gallery .img-box {
+  height: 735px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 23px;
+  /* background-size: contain; */
+  width: 100%;
+
 }
 
-@media (max-width: 993px){
+.gallery .first-section-gallery-page {
+  height: 400px!important;
+}
+
+@media (max-width: 993px) {
   .gallery-transform {
     transform: translateY(0px);
   }
+
   .gallery-image2 {
-   
+
     transform: translateY(0px);
-    
-    
+
+
   }
-  
+
   .gallery-image1 {
-  
+
     transform: translateY(0px);
-    
+
   }
-  .gallery-item{
+
+  .gallery-item {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }

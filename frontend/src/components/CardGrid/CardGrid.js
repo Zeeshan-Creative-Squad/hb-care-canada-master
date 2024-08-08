@@ -104,8 +104,8 @@ function CardGrid() {
                   </button>
                 ))}
                 {currentPage < Math.ceil(blogs.length / itemsPerPage) && (
-                  <button onClick={() => handlePageChange(currentPage + 1)}>
-                    <img src="/images/icons/next-btn-icon.svg" className="next-icon" alt="next arrow" />
+                  <button className='connect-button' onClick={() => handlePageChange(currentPage + 1)}>
+                    <img src="/icons/next-arrow-icon.svg" className="next-icon" alt="next-arrow"/>
                   </button>
                 )}
               </div>

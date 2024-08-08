@@ -77,7 +77,7 @@ const ProductGallery = () => {
               <div className='row gy-4'>
                 {galleryImages.slice(0, visible).map((ele, index) => (
                   <div className={`col-lg-${sequence.includes(index) ? "7" : "5"}`} key={index}>
-                    <div className='w-100 img-box' style={{backgroundImage:`url(${ele})`}} onClick={() => {
+                    <div className='w-100 img-box first-section-gallery-page' style={{backgroundImage:`url(${ele})`}} onClick={() => {
                       setShow(true); SetImg(ele)
                     }}>
                     </div>
