@@ -88,11 +88,14 @@ const HomePage = () => {
           </div>
         :
         <>
-        recentBlogs &&
-          <Articles 
+         
+         {recentBlogs &&
+         <Articles 
             recentBlogCard={recentBlogs}
             redirectionFunction={redirectUserToBlog}
-          />
+          />}
+        
+          
         </>
       }
       

@@ -11,7 +11,7 @@ const footerHero = () => {
       <div className='upper-section'>
         <div className="footer-section">
        
-          <img src="images/footer-logo.png" alt="Website Logo" className="logo" />
+          <img src="/images/footer-logo.png" alt="Website Logo" className="logo" />
           <p className="footer-text">Elevate your grooming game with HB Care. Quality products, exceptional service, and endless support await. Join us today and experience the difference for yourself. </p>
 
           <div className="social-icons">
